@@ -1,0 +1,122 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: poppins, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+/* Parent Container */
+
+.additional-container {
+    display: flex;
+    width: auto;
+    /* padding: 20px 20px; */
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 12px;
+    background: var(--White, #FFF);
+    box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.16), -2px -4px 4px 0px rgba(0, 0, 0, 0.16);
+    /* Add-on */
+    /* border: 16px solid #ADDCED; */
+    height: auto;
+}
+
+/* Search Input-field */
+.search-container {
+    display: flex;
+    padding: 7px 8px 7px 16px;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+    border-radius: 12px 12px 0px 0px;
+    border-bottom: 1px solid var(--InputField, #06F);
+    /* border-radius: 4px; */
+    position: relative;
+    max-width: 240px;
+}
+
+.search-icon {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: 16px;
+    color: #333;
+    background-color: transparent;
+    padding: 0;
+    cursor: text;
+}
+
+.search-input::placeholder {
+    color: #999;
+    font-size: 14px;
+}
+
+.search-input:focus::placeholder {
+    color: #ccc;
+}
+
+.search-input:focus {
+    color: #0066ff;
+    outline: none;
+}
+
+
+/* Target Dropdown List */
+.dropdown-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 12px 0;
+}
+
+.dropdown-list ul {
+    list-style: none;
+    width: 100%;
+}
+
+.dropdown-list li {
+    display: flex;
+    width: 240px;
+    padding: 7px 8px 7px 16px;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    /* height: 18px; */
+    border-left: 2px solid transparent;
+}
+
+.dropdown-list a {
+    text-decoration: none;
+    /* Text */
+    color: var(--Secondary, #5C5C5C);
+    /* font-family: "IBM Plex Sans"; */
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.dropdown-list li:hover{
+    cursor: pointer;
+    color: #0066ff;
+    background-color: #F0F0F1;
+    border-left: 2px solid #0066ff;
+}
+
+.dropdown-list a:hover{
+    color: #0066ff;
+}

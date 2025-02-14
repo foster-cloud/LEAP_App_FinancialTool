@@ -1,0 +1,346 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: poppins, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Top Navigation */
+.nav-blue-header {
+    display: flex;
+    width: 100%;
+    /* Use 100% width to make it responsive */
+    padding: 8px 24px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0066ff;
+}
+
+/* R.H.S. Content */
+.logo-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-main:hover {
+    cursor: pointer;
+}
+
+.vertical-line {
+    width: 1px;
+    /* Line width */
+    height: 28px;
+    /* Line height */
+    background-color: white;
+    /* Line color */
+    margin: 0 16px;
+    /* Spacing around the line */
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: 400;
+    color: white;
+}
+
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .nav-blue {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo-main {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .vertical-line {
+        display: block;
+        /* Display the vertical line on small screens */
+    }
+
+    .left-user-setting {
+        display: none;
+    }
+}
+
+
+/* Middle Content: Workspace Setting  */
+.middle-content-setting {
+    display: flex;
+    width: 100%;
+    padding: 32px 24px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+/* Define Back Action */
+/* Lvl:01 */
+.back-action {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    /* background-color: aquamarine; */
+    width: 100%;
+}
+
+
+.back-action svg {
+    width: 20px;
+    height: 20px;
+    fill: rgba(0, 102, 255, 0.04);
+
+}
+
+.back-action h5 {
+    color: var(--Secondary, #5C5C5C);
+    /* font-family: "IBM Plex Sans"; */
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+.back-action svg:hover, 
+.back-action h5:hover{
+    cursor: pointer;
+    color: #0066ff;
+}
+
+
+
+
+
+/* lvl:02 */
+.workspace-setting-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    align-self: stretch;
+}
+
+/* Lvl:2.1 */
+.workspace-setting-title {
+    display: flex;
+}
+
+.workspace-setting-title h5 {
+    color: var(--Primary, #333);
+    /* font-family: "IBM Plex Sans"; */
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* Lvl:2.2 */
+/* Main Container */
+.workspace-setting-side-and-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 60px;
+    align-self: stretch;
+}
+
+
+/* L.H.S. */
+/* Side Menu */
+.side-menu {
+    display: flex;
+    width: 210px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+
+/* Multiple Tab-List to access */
+.side-menu__tab-list {
+    list-style: none;
+    /* Remove bullet points */
+    margin: 0;
+    /* Remove default margin */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.side-menu__tab-list li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    border-left: 3px solid transparent;
+    border-radius: 1px;
+}
+
+.side-menu__tab-list a {
+    text-decoration: none;
+    /* Remove underline */
+    color: #5c5c5c;
+    display: flex;
+    padding: 10px 16px;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+}
+
+/* Ok */
+.side-menu__tab-list a svg {
+    width: 20px;
+    height: 20px;
+    stroke-width: 1px;
+}
+
+/* Ok */
+.side-menu__tab-list a span {
+    overflow: hidden;
+    color: var(--Secondary, #5C5C5C);
+    /* font-family: "IBM Plex Sans"; */
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+
+.side-menu__tab-list li:hover,
+.side-menu__tab-list--active   {
+    background: #EBEBEB;
+    cursor: pointer;
+    color: #0066ff;
+    /* border-color: #0066ff !important; */
+    border-left: 3px solid #0066ff !important;
+}
+
+/* .side-menu__tab-list--active {
+    background: #EBEBEB;
+    cursor: pointer;
+    border-color: #0066ff !important;
+} */
+
+.side-menu__tab-list li:hover a,
+.side-menu__tab-list--active a {
+    color: #0066ff;
+    /* Active and hover text color */
+}
+
+
+
+
+.about-content {
+    display: flex;
+    width: 359px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 32px;
+    /* background-color: rgb(225, 243, 249); */
+}
+
+
+
+/* About Content Info */
+.about-content h1 {
+    color: var(--Primary, #333);
+    leading-trim: both;
+    text-edge: cap;
+    /* font-family: "IBM Plex Sans"; */
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.about-content-Info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.about-content-Info h6 {
+    color: var(--Primary, #333);
+    /* font-family: "IBM Plex Sans"; */
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.about-content-Info p {
+    color: var(--Secondary, #5C5C5C);
+    /* font-family: "IBM Plex Sans"; */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+
+
+
+
+
+
+
+/* Bottom */
+/* Footer */
+.footer-desktop {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+    color: #737373;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    text-align: center;
+}
+
+.footer-desktop h1 {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* Div for Clickable */
+.user-click {
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+}
+
+/* Define text */
+.user-click h1 {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.user-click h1:hover {
+    color: #0066ff;
+    cursor: pointer;
+}

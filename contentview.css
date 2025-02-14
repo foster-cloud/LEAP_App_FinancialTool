@@ -1,0 +1,896 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: poppins, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+
+
+/* Requirement: FYI */
+.requirement {
+    display: flex;
+    background-color: #d5f7f7;
+    padding: 16px;
+    width: 100%;
+    justify-content: center;
+}
+
+
+
+
+
+/* Page-Content: CSS */
+
+.container-box {
+    display: flex;
+    flex: 1;
+    width: 1168px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    background-color: #fff;
+    border: 16px solid #D1EFFF;
+}
+
+/* <!-- NumberCode + Status and Toolbar + Close --> */
+.number-code-tool-list {
+    display: flex;
+    /* Remove 20px padding Left anf Right during code sync */
+    padding: 40px 20px 24px 20px;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    /* background-color: #f1f4f5; */
+}
+
+/* L.H.S. */
+.code-status {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+
+.code_status h3 {
+    width: 200px;
+    color: var(--Primary, #333);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+/* <!-- Vertical Line- Separator */
+.vertical-line {
+    width: 1px;
+    height: 24px;
+    background-color: #AAA;
+    /* Line color */
+    margin: 0 auto;
+    /* Center align if needed */
+}
+
+
+/* Label with btn | Status*/
+.button-with-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    /* Space between label and button */
+}
+
+.button-with-label label {
+    color: var(--Secondary, #5C5C5C);
+    font-family: "Helvetica Neue";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.button-with-label button {
+    padding: 8px 16px;
+    background-color: #88DBA8;
+    /* Button background color */
+    color: #FFF;
+    /* Button text color */
+    border: none;
+    border-radius: 4px;
+    color: var(--Primary, #333);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    /* Slightly bold */
+    cursor: pointer;
+}
+
+.button-with-label button:hover {
+    background-color: #0066ff;
+    /* Darker shade on hover */
+    color: #fff;
+}
+
+
+/*  <!-- Tools Side: R.H.S. --> */
+/* Parent - Div */
+.row-view-action-tools {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Div for Tool-List */
+.tool-list-box {
+    display: flex;
+}
+
+.action-tools {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    width: fit-content;
+    width: 40%;
+}
+
+/* List of Tools */
+.action-tools li {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+/* Defining a links */
+.action-tools li a {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    text-decoration: none;
+    color: #737373;
+    font-size: 14px;
+    font-weight: 400;
+    align-items: center;
+    white-space: nowrap;
+    padding: 4px 8px;
+}
+
+.action-tools li a:hover {
+    cursor: pointer;
+    color: #0066ff;
+    background-color: #eaeaea;
+}
+
+
+
+/* Blue Close Btn - Icon */
+.close-with-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    /* Adds a pointer cursor on hover */
+}
+
+.close-with-label svg,
+/* Targets the SVG icon */
+.close-with-label label {
+    /* Targets the label text */
+    transition: transform 0.2s, fill 0.2s, color 0.2s;
+    /* Smooth transition effects */
+}
+
+/* Hover effect */
+.close-with-label:hover svg {
+    transform: scale(1.1);
+    /* Slightly enlarges the icon on hover */
+    fill: #0044cc;
+    /* Changes the icon fill color on hover */
+}
+
+.close-with-label:hover label {
+    color: #0066ff;
+    /* Changes the label color on hover */
+    transform: scale(1.1);
+    /* Slightly enlarges the label text on hover */
+}
+
+
+
+
+/* Side + ContentView [Parent] */
+
+.selected-row-side-nav-content-view {
+    display: flex;
+    flex: 1;
+    position: relative;
+    /* width: 100%; */
+    height: 100%;
+    align-items: flex-start;
+    gap: 24px;
+    align-self: stretch;
+    background-color: #fff;
+}
+
+/* Child:01 | SideNav | L.H.S */
+
+.row-side-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: rgba(199, 139, 220, 0.2);
+    float: left;
+    width: 25%;
+    height: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 16px;
+}
+
+/* Child:02 | Content Page */
+.content-view-page {
+    display: flex;
+    flex: 1;
+    position: relative;
+    /* width: 100%; */
+    padding: 2px;
+    align-items: flex-start;
+    gap: 10px;
+    flex: 1 0 0;
+    border: 1px solid #E1DFDD;
+    float: right;
+}
+
+.content-display {
+    display: flex;
+    padding: 60px 120px 60px 48px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 32px;
+    flex: 1 0 0;
+    align-self: stretch;
+    border: 12px solid #F6F7F9;
+}
+
+/* Title + Issue Info */
+
+
+.content-display_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    /* background-color: #E1DFDD; */
+    position: relative;
+}
+
+
+.heading-title {
+    display: flex;
+    padding-left: 16px;
+    align-items: flex-start;
+    gap: 10px;
+    border-left: 3px solid var(--Brand, #06F);
+
+    color: var(--Primary, #333);
+    font-family: "IBM Plex Sans";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+
+
+
+
+/* Content Display Inner */
+.content-display {
+    display: flex;
+    padding: 60px 120px 60px 48px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+
+.content-display-info {
+    display: flex;
+    flex-direction: row;
+    height: 33px;
+    padding: 4px 16px;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+
+    border-radius: 1px;
+    border-top: 0.75px solid var(--Primary, #333);
+    border-right: 1px solid var(--Primary, #333);
+    border-bottom: 2px solid var(--Primary, #333);
+    border-left: 1px solid var(--Primary, #333);
+
+    /* Text Property */
+    color: var(--Primary, #333);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+/*Moumita*/
+.controls{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+}
+
+.content-display-info:hover{
+    background-color: #d5e2f5;
+    cursor: pointer;
+}
+
+/* Issue Container Box: Position: Aboslut */
+.code-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    border-radius: 1px;
+    position: absolute;
+    right: 0px;
+    /* Defining Width */
+    width: 320px;
+}
+
+.code-info-title {
+    display: flex;
+    padding: 16px;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+    border-radius: 1px 1px 0px 0px;
+    border: 1px solid #C7C7C7;
+    background: linear-gradient(0deg, rgba(0, 102, 255, 0.08) 0%, rgba(0, 102, 255, 0.08) 100%), #F6F7F9;
+}
+
+
+.code-info-text {
+    display: flex;
+    width: 270.5px;
+    align-items: flex-start;
+    gap: 12px;
+    /* justify-content: space-between; */
+}
+
+.code-info-text h5 {
+    width: 128px;
+    flex-shrink: 0;
+    color: var(--Primary, #333);
+    /* font-family: "IBM Plex Sans"; */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.code-info-text h6 {
+    color: var(--Primary, #333);
+    /* font-family: "IBM Plex Sans"; */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.code-info-title svg {
+    fill: rgba(0, 102, 255, 0.08);
+}
+
+
+/* Close Action for Issue Info Container */
+.code-info-title svg:hover {
+    cursor: pointer;
+    color: #fff;
+    background-color: #0066FF;
+}
+
+
+
+
+
+
+
+/* Lvl: 2.0 | Internal Content */
+.internal-content {
+    display: flex;
+    padding: 20px 16px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    align-self: stretch;
+    border-right: 1px solid #C7C7C7;
+    border-left: 1px solid #C7C7C7;
+    background: var(--White, #FFF);
+}
+
+/* Lvl: 2.1 */
+.internal-content-tab {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+}
+
+/* Title + Background */
+.internal-content-tab-label {
+    display: flex;
+    padding: 6px 7px;
+    align-items: center;
+    gap: 10px;
+
+    border-radius: 2px;
+    background: rgba(0, 102, 255, 0.08);
+
+    color: var(--Secondary, #5C5C5C);
+    leading-trim: both;
+    text-edge: cap;
+    /* font-family: "IBM Plex Sans"; */
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.internal-content-tab-info {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    align-self: stretch;
+    border-bottom: 1px solid #EDEBE9;
+    padding-bottom: 16px;
+}
+
+.internal-content-tab h6{
+    width: 128px;
+    color: var(--Secondary, #5C5C5C);
+/* font-family: "IBM Plex Sans"; */
+font-size: 13px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+.internal-content-tab-info h5 {
+    width: 128px;
+    color: var(--Primary, #333);
+    /* font-family: "IBM Plex Sans"; */
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.internal-content-tab-info p {
+    flex: 1 0 0;
+    color: var(--Primary, #333);
+    /* font-family: "IBM Plex Sans"; */
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+
+
+
+
+
+
+/* Footer | Issue Info */
+.code-info-footer {
+    display: flex;
+    padding: 16px;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+    border-radius: 1px 1px 0px 0px;
+    border: 1px solid #C7C7C7;
+    background: linear-gradient(0deg, rgba(0, 102, 255, 0.08) 0%, rgba(0, 102, 255, 0.08) 100%), #F6F7F9;
+}
+
+
+.code-info-text-footer {
+    display: flex;
+    width: 270.5px;
+    align-items: flex-start;
+    gap: 12px;
+    /* justify-content: space-between; */
+}
+
+
+.code-info-text-footer h5 {
+    width: 108px;
+    color: var(--Primary, #333);
+    /* font-family: "IBM Plex Sans"; */
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.code-info-text-footer h6 {
+    flex: 1 0 0;
+    color: var(--Primary, #333);
+    /* font-family: "IBM Plex Sans"; */
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+
+
+
+
+
+/* Side Menu */
+.side-menu {
+    display: flex;
+    flex-direction: column;
+    width: 224px;
+    background-color: #fff;
+    border: 1px solid #E1DFDD;
+}
+
+/* Expand and Collapse Side-Menu */
+.side-menu__action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 24px;
+}
+
+.side-menu__action__title {
+    color: var(--Secondary, #5C5C5C);
+    /* font-family: "IBM Plex Sans"; */
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+/* Target SVG */
+.side-menu__action--collapse svg,
+.side-menu__action--expand svg {
+    width: 20px;
+    height: 20px;
+    stroke-width: 2px;
+    color: #333;
+}
+
+/* Tab List(Unordered-List) */
+.side-menu__tab-list {
+    list-style: none;
+    /* Remove Bullet Point */
+    margin: 0;
+    width: 224px;
+}
+
+/* Targeting Individual List */
+.side-menu__tab-list li {
+    padding: 8px 24px;
+    border-left: 2px solid #fff;
+    /* #F2F5F7 */
+    border-top: 1px solid #E1DFDD;
+}
+
+/* Targeting Anchor */
+.side-menu__tab-list a {
+    text-decoration: none;
+    /* Remove underline */
+    color: #737373;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.side-menu__tab-list a svg {
+    width: 20px;
+    height: 20px;
+    stroke-width: 1px;
+}
+
+.side-menu__tab-list a span {
+    overflow: hidden;
+    color: var(--Secondary, #5C5C5C);
+    /* font-family: "IBM Plex Sans"; */
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.side-menu__tab-list li:hover {
+    background-color: rgba(0, 102, 255, 0.08);
+    cursor: pointer;
+    /* border-color: #0066ff !important; */
+    border-left: 2px solid #0066FF !important;
+}
+
+.side-menu__tab-list--active {
+    /* background-color: #CBDEF8; */
+    background-color: rgba(0, 102, 255, 0.08);
+    cursor: pointer;
+    /* border-color: #0066ff !important; */
+    border-left: 2px solid #0066FF !important;
+}
+
+.side-menu__tab-list li:hover a,
+.side-menu__tab-list--active a {
+    color: #0066ff;
+    /* Active and hover text color */
+}
+
+
+
+
+
+
+
+/* Accordion List (Parent) */
+.accordion-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 48px;
+    align-self: stretch;
+}
+
+/* Accordion Properties */
+.accordion {
+    border-bottom: 1px solid #E8EBEC;
+    padding: 10px 0;
+}
+
+.accordion-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+    padding: 10px 0;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.3s ease;
+    gap: 8px;
+}
+
+.accordion-icon {
+    font-size: 20px;
+    /* margin-right: 10px; */
+    transition: transform 0.3s ease;
+}
+
+.accordion-title {
+    width: 348px;
+    color: var(--Primary, #333);
+    /* font-family: "IBM Plex Sans"; */
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: auto;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    padding: 0 0;
+}
+
+
+/* Active Accordion */
+
+.accordion.active .accordion-icon svg {
+    transform: rotate(90deg);
+    /* Rotate the SVG to indicate it's active */
+    stroke: #0066FF;
+    /* Change the color of the SVG stroke */
+    transition: transform 0.3s ease, stroke 0.3s ease;
+    /* Smooth transition */
+}
+
+.accordion.active .accordion-title {
+    color: #0066FF;
+    /* Change the title color when active */
+    font-weight: normal;
+    /* Optionally, make the title bold */
+}
+
+
+.accordion.active {
+    border-bottom: 1px solid #06f;
+    /* Darker border for active accordion */
+}
+
+
+.accordion.active .accordion-content {
+    max-height: 648px;
+    /* Adjust based on content height */
+    padding: 10px 0;
+    border-top: 1px solid #06f;
+    /* border-bottom: 1px solid #333; */
+}
+
+
+
+.dropdown-container-div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 48px;
+    padding: 20px 0px 20px 20px;
+}
+
+.dropdown-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 48px;
+    /* padding: 20px; */
+}
+
+
+
+
+
+/* Container for the input and label */
+.input-container-dropdown {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.input-container-dropdown label {
+    /* font-size: 14px; */
+    color: #333;
+    /* Adjust the color as needed */
+    margin-bottom: 8px;
+    /* Spacing between label and input */
+
+    color: var(--Primary, #333);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+/* Wrapper for the input and SVG icon */
+.input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    /* background-color: #f9f9f9; */
+    border: 1px solid #ccc;
+    /* Adjust border color as needed */
+    border-radius: 1px;
+    padding: 8px 12px;
+    cursor: pointer;
+    width: 320px;
+}
+
+/* Styles for the input element */
+.dropdown-select {
+    flex-grow: 1;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #333;
+    /* Adjust the text color as needed */
+    cursor: pointer;
+}
+
+/* Removes the default input field styles */
+.dropdown-select::placeholder {
+    color: #999;
+    /* Placeholder color */
+}
+
+.dropdown-select[readonly] {
+    user-select: none;
+    /* Prevent text selection in readonly input */
+}
+
+/* Styles for the SVG icon */
+.input-wrapper svg {
+    position: absolute;
+    right: 12px;
+    /* Position the icon to the right */
+    width: 20px;
+    height: 20px;
+    pointer-events: none;
+    /* Prevent SVG from interfering with the input interaction */
+}
+
+/* Hover effect for the input-wrapper */
+.input-wrapper:hover {
+    border-color: #0066FF;
+    /* Change the border color on hover */
+}
+
+/* Optional: Focus effect when clicking on the input-wrapper */
+.input-wrapper:focus-within {
+    border-color: #0066FF;
+    /* Change the border color when input is focused */
+}
+
+
+
+
+/* Test */
+/* Initially Hidden */
+.new-div {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    z-index: 100;
+}
+
+/* Styling for the Div Container */
+.code-info-container {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    border-radius: 1px;
+    position: absolute;
+    right: 0px;
+    width: 320px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.code-info-title {
+    display: flex;
+    padding: 16px;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+    background: linear-gradient(0deg, rgba(0, 102, 255, 0.08) 0%, rgba(0, 102, 255, 0.08) 100%), #F6F7F9;
+    border: 1px solid #C7C7C7;
+}
+
+.code-info-title svg {
+    cursor: pointer;
+}
+
+/* Hover effect for the close icon */
+.code-info-title svg:hover {
+    background-color: #0066FF;
+    stroke: #ffffff;
+    transition: background-color 0.3s ease;
+}

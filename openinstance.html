@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenInstance</title>
+    <link rel="stylesheet" href="openinstance.css">
+    <script defer src="openinstance.js"></script>
+</head>
+
+<body>
+    <div class="modal-overlay">
+        <div class="open_instance-modal">
+            <!-- Lvl:01 | First Div: Title and Close -->
+            <div class="modal-header">
+                <h2 class="modal-title">Open Instance</h2>
+                <div class="modal-actions">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                        <rect width="28" height="28" rx="2" fill="#0066FF" fill-opacity="0.08" />
+                        <path d="M21 7L7 21" stroke="#333333" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M7 7L21 21" stroke="#333333" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Lvl:02 | Select All + Count_Timer -->
+            <div class="open_list_action">
+
+                <!-- Lvl:02.1 | One action to Close All-->
+                <div class="open_list-select_all">
+                    <!-- L.H.S: Check-box + Select All -->
+                    <div class="checkbox-select-all">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path
+                                d="M12.6667 2H3.33333C2.59695 2 2 2.59695 2 3.33333V12.6667C2 13.403 2.59695 14 3.33333 14H12.6667C13.403 14 14 13.403 14 12.6667V3.33333C14 2.59695 13.403 2 12.6667 2Z"
+                                stroke="#0066FF" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <p>Select All</p>
+                    </div>
+
+                    <!-- R.H.S.: Close btn -->
+                    <button class="close_open_instance">
+                        Close
+                    </button>
+                </div>
+
+                <!-- Lvl:02.2 | Count + Timer -->
+                <div class="count-timer">
+                    <!-- L.H.S -->
+                    <div class="count-timer-title">
+                        Count 7
+                    </div>
+                    <!-- R.H.S. -->
+                    <div class="count-timer-open">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                            <path
+                                d="M7.99967 15.1673C11.6816 15.1673 14.6663 12.1825 14.6663 8.50065C14.6663 4.81875 11.6816 1.83398 7.99967 1.83398C4.31778 1.83398 1.33301 4.81875 1.33301 8.50065C1.33301 12.1825 4.31778 15.1673 7.99967 15.1673Z"
+                                stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M8 4.5V8.5H11" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <p>Open Since</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Lvl:03 | OpenInstance List (Row) -->
+            <div class="instance-list">
+                <!-- Lvl:3.1 | Type: Issue (Open)-->
+                <div class="main_tab_based_list">
+
+                    <!-- Type Issue -->
+                    <div class="type_issue">
+                        Type: Issue (3)
+                    </div>
+
+                    <!-- List of Open Instance -->
+                    <div class="open_list_row">
+                        <!-- checkbox -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path
+                                d="M12.6667 2H3.33333C2.59695 2 2 2.59695 2 3.33333V12.6667C2 13.403 2.59695 14 3.33333 14H12.6667C13.403 14 14 13.403 14 12.6667V3.33333C14 2.59695 13.403 2 12.6667 2Z"
+                                stroke="#0066FF" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <!-- R.H.S -->
+                        <div class="open_list">
+                            <div class="open_list-number_tab_info">
+                                <h3>ISSU002029</h3>
+                                <h4>Project Info</h4>
+                            </div>
+                            <h4 class="open_list-time-stamp">
+                                02:24 min ago </h4>
+                        </div>
+                    </div>
+
+                    <!-- List of Open Instance -->
+                    <div class="open_list_row">
+                        <!-- checkbox -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path
+                                d="M12.6667 2H3.33333C2.59695 2 2 2.59695 2 3.33333V12.6667C2 13.403 2.59695 14 3.33333 14H12.6667C13.403 14 14 13.403 14 12.6667V3.33333C14 2.59695 13.403 2 12.6667 2Z"
+                                stroke="#0066FF" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <!-- R.H.S -->
+                        <div class="open_list">
+                            <div class="open_list-number_tab_info">
+                                <h3>ISSU002029</h3>
+                                <h4>Project Info</h4>
+                            </div>
+                            <h4 class="open_list-time-stamp">
+                                02:24 min ago </h4>
+                        </div>
+                    </div>
+
+                    <!-- List of Open Instance -->
+                    <div class="open_list_row">
+                        <!-- checkbox -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path
+                                d="M12.6667 2H3.33333C2.59695 2 2 2.59695 2 3.33333V12.6667C2 13.403 2.59695 14 3.33333 14H12.6667C13.403 14 14 13.403 14 12.6667V3.33333C14 2.59695 13.403 2 12.6667 2Z"
+                                stroke="#0066FF" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <!-- R.H.S -->
+                        <div class="open_list">
+                            <div class="open_list-number_tab_info">
+                                <h3>ISSU002029</h3>
+                                <h4>Project Info</h4>
+                            </div>
+                            <h4 class="open_list-time-stamp">
+                                02:24 min ago </h4>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Lvl:3.2 | Type: Workflow (Open) -->
+                <div class="main_tab_based_list">
+                    <!-- Type Issue -->
+                    <div class="type_issue">
+                        Type: Workflow Queues (1)
+                    </div>
+
+                    <!-- List of Open Instance -->
+                    <div class="open_list_row">
+                        <!-- checkbox -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path
+                                d="M12.6667 2H3.33333C2.59695 2 2 2.59695 2 3.33333V12.6667C2 13.403 2.59695 14 3.33333 14H12.6667C13.403 14 14 13.403 14 12.6667V3.33333C14 2.59695 13.403 2 12.6667 2Z"
+                                stroke="#0066FF" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <!-- R.H.S -->
+                        <div class="open_list">
+                            <div class="open_list-number_tab_info">
+                                <h3>ISSU002029</h3>
+                                <h4>Project Info</h4>
+                            </div>
+                            <h4 class="open_list-time-stamp">
+                                02:24 min ago </h4>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Lvl:3.3 | Type: Project (Open)-->
+                <div class="main_tab_based_list">
+                    <!-- Type Issue -->
+                    <div class="type_issue">
+                        Type: Project (3)
+                    </div>
+
+                    <!-- List of Open Instance -->
+                    <div class="open_list_row">
+                        <!-- checkbox -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path
+                                d="M12.6667 2H3.33333C2.59695 2 2 2.59695 2 3.33333V12.6667C2 13.403 2.59695 14 3.33333 14H12.6667C13.403 14 14 13.403 14 12.6667V3.33333C14 2.59695 13.403 2 12.6667 2Z"
+                                stroke="#0066FF" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <!-- R.H.S -->
+                        <div class="open_list">
+                            <div class="open_list-number_tab_info">
+                                <h3>ISSU002029</h3>
+                                <h4>Project Info</h4>
+                            </div>
+                            <h4 class="open_list-time-stamp">
+                                02:24 min ago </h4>
+                        </div>
+                    </div>
+
+                    <!-- List of Open Instance -->
+                    <div class="open_list_row">
+                        <!-- checkbox -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path
+                                d="M12.6667 2H3.33333C2.59695 2 2 2.59695 2 3.33333V12.6667C2 13.403 2.59695 14 3.33333 14H12.6667C13.403 14 14 13.403 14 12.6667V3.33333C14 2.59695 13.403 2 12.6667 2Z"
+                                stroke="#0066FF" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <!-- R.H.S -->
+                        <div class="open_list">
+                            <div class="open_list-number_tab_info">
+                                <h3>ISSU002029</h3>
+                                <h4>Project Info</h4>
+                            </div>
+                            <h4 class="open_list-time-stamp">
+                                02:24 min ago </h4>
+                        </div>
+                    </div>
+
+                    <!-- List of Open Instance -->
+                    <div class="open_list_row">
+                        <!-- checkbox -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path
+                                d="M12.6667 2H3.33333C2.59695 2 2 2.59695 2 3.33333V12.6667C2 13.403 2.59695 14 3.33333 14H12.6667C13.403 14 14 13.403 14 12.6667V3.33333C14 2.59695 13.403 2 12.6667 2Z"
+                                stroke="#0066FF" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <!-- R.H.S -->
+                        <div class="open_list">
+                            <div class="open_list-number_tab_info">
+                                <h3>ISSU002029</h3>
+                                <h4>Project Info</h4>
+                            </div>
+                            <h4 class="open_list-time-stamp">
+                                02:24 min ago </h4>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Lvl:3.4 | Type: Project (Open)-->
+                <div class="main_tab_based_list">
+                    <!-- Type Issue -->
+                    <div class="type_issue">
+                        Type: Project (3)
+                    </div>
+
+                    <!-- List of Open Instance -->
+                    <div class="open_list_row">
+                        <!-- checkbox -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path
+                                d="M12.6667 2H3.33333C2.59695 2 2 2.59695 2 3.33333V12.6667C2 13.403 2.59695 14 3.33333 14H12.6667C13.403 14 14 13.403 14 12.6667V3.33333C14 2.59695 13.403 2 12.6667 2Z"
+                                stroke="#0066FF" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <!-- R.H.S -->
+                        <div class="open_list">
+                            <div class="open_list-number_tab_info">
+                                <h3>ISSU002029</h3>
+                                <h4>Project Info</h4>
+                            </div>
+                            <h4 class="open_list-time-stamp">
+                                02:24 min ago </h4>
+                        </div>
+                    </div>
+
+                    <!-- List of Open Instance -->
+                    <div class="open_list_row">
+                        <!-- checkbox -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path
+                                d="M12.6667 2H3.33333C2.59695 2 2 2.59695 2 3.33333V12.6667C2 13.403 2.59695 14 3.33333 14H12.6667C13.403 14 14 13.403 14 12.6667V3.33333C14 2.59695 13.403 2 12.6667 2Z"
+                                stroke="#0066FF" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <!-- R.H.S -->
+                        <div class="open_list">
+                            <div class="open_list-number_tab_info">
+                                <h3>ISSU002029</h3>
+                                <h4>Project Info</h4>
+                            </div>
+                            <h4 class="open_list-time-stamp">
+                                02:24 min ago </h4>
+                        </div>
+                    </div>
+
+                    <!-- List of Open Instance -->
+                    <div class="open_list_row">
+                        <!-- checkbox -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path
+                                d="M12.6667 2H3.33333C2.59695 2 2 2.59695 2 3.33333V12.6667C2 13.403 2.59695 14 3.33333 14H12.6667C13.403 14 14 13.403 14 12.6667V3.33333C14 2.59695 13.403 2 12.6667 2Z"
+                                stroke="#0066FF" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <!-- R.H.S -->
+                        <div class="open_list">
+                            <div class="open_list-number_tab_info">
+                                <h3>ISSU002029</h3>
+                                <h4>Project Info</h4>
+                            </div>
+                            <h4 class="open_list-time-stamp">
+                                02:24 min ago </h4>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Lvl:3.5 | Type: Project (Open)-->
+                <div class="main_tab_based_list">
+                    <!-- Type Issue -->
+                    <div class="type_issue">
+                        Type: Project (3)
+                    </div>
+
+                    <!-- List of Open Instance -->
+                    <div class="open_list_row">
+                        <!-- checkbox -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path
+                                d="M12.6667 2H3.33333C2.59695 2 2 2.59695 2 3.33333V12.6667C2 13.403 2.59695 14 3.33333 14H12.6667C13.403 14 14 13.403 14 12.6667V3.33333C14 2.59695 13.403 2 12.6667 2Z"
+                                stroke="#0066FF" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <!-- R.H.S -->
+                        <div class="open_list">
+                            <div class="open_list-number_tab_info">
+                                <h3>ISSU002029</h3>
+                                <h4>Project Info</h4>
+                            </div>
+                            <h4 class="open_list-time-stamp">
+                                02:24 min ago </h4>
+                        </div>
+                    </div>
+
+                    <!-- List of Open Instance -->
+                    <div class="open_list_row">
+                        <!-- checkbox -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path
+                                d="M12.6667 2H3.33333C2.59695 2 2 2.59695 2 3.33333V12.6667C2 13.403 2.59695 14 3.33333 14H12.6667C13.403 14 14 13.403 14 12.6667V3.33333C14 2.59695 13.403 2 12.6667 2Z"
+                                stroke="#0066FF" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <!-- R.H.S -->
+                        <div class="open_list">
+                            <div class="open_list-number_tab_info">
+                                <h3>ISSU002029</h3>
+                                <h4>Project Info</h4>
+                            </div>
+                            <h4 class="open_list-time-stamp">
+                                02:24 min ago </h4>
+                        </div>
+                    </div>
+
+                    <!-- List of Open Instance -->
+                    <div class="open_list_row">
+                        <!-- checkbox -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path
+                                d="M12.6667 2H3.33333C2.59695 2 2 2.59695 2 3.33333V12.6667C2 13.403 2.59695 14 3.33333 14H12.6667C13.403 14 14 13.403 14 12.6667V3.33333C14 2.59695 13.403 2 12.6667 2Z"
+                                stroke="#0066FF" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <!-- R.H.S -->
+                        <div class="open_list">
+                            <div class="open_list-number_tab_info">
+                                <h3>ISSU002029</h3>
+                                <h4>Project Info</h4>
+                            </div>
+                            <h4 class="open_list-time-stamp">
+                                02:24 min ago </h4>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

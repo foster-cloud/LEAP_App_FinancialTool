@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WKSpaceTable</title>
+    <link rel="stylesheet" href="wkspacetable.css">
+</head>
+
+<body>
+
+    <!-- 1st: Top Nav -->
+    <div class="nav-blue-header">
+        <!--L.H.S Content-->
+        <div class="logo-main">
+            <img src="/Images/MIC-Global.svg" alt="MIC Logo">
+            <div class="vertical-line"></div> <!-- Vertical line div -->
+            <h3 class="logo-text">MiConnect</h3>
+        </div>
+        <!--R.H.S Content -->
+        <div class="user-setting">
+            <!--User Logout-->
+            <div class="user-logout">
+                <img class="user-icon" src="/Images/user-circle.svg" alt="user profile circle">
+                <h5 class="user-name">Dinesh Kumar</h5>
+                <!-- <img class="dropdown-icon" src="/Images/chevron-down.svg" alt="drop icon"> -->
+                <svg class="dropdown-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-chevron-down">
+                    <path d="m6 9 6 6 6-6" />
+                </svg>
+            </div>
+            <!--FQA-->
+            <!-- <img class="faq-icon" src="/Images/help-circle.svg" alt="FAQ link"> -->
+            <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-circle-help">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+                <path d="M12 17h.01" />
+            </svg>
+            <!--Setting-->
+            <!-- <img class="settings-icon" src="/Images/settings.svg" alt="Admin Settings"> -->
+            <svg class="settings-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-settings">
+                <path
+                    d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z" />
+                <circle cx="12" cy="12" r="3" />
+            </svg>
+        </div>
+    </div>
+
+    <!-- 2nd: Workspace Title and Button -->
+    <section class="workspace-count-selection-button">
+        <!-- Workspace Title Count -->
+        <div class="workspace-title-count">
+            <h3 class="workspaces-heading">Workspaces</h3>
+            <p>Total: <span>10</span> </p>
+        </div>
+        <!-- User Selection -->
+        <div class="button-selection">
+            <button>Recently Viewed</button>
+            <button>All Workspaces</button>
+            <button class="search-icon-button">
+                <!-- <img  src="Images/search.svg" alt="icon-search">Search  -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-search">
+                    <circle cx="11" cy="11" r="8" />
+                    <path d="m21 21-4.3-4.3" />
+                </svg>
+                search
+            </button>
+            <!-- Card View -->
+            <button class="button-selection">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-layout-grid">
+                    <rect width="7" height="7" x="3" y="3" rx="1" />
+                    <rect width="7" height="7" x="14" y="3" rx="1" />
+                    <rect width="7" height="7" x="14" y="14" rx="1" />
+                    <rect width="7" height="7" x="3" y="14" rx="1" />
+                </svg></button>
+            <!-- List View -->
+            <button class="button-selection">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-menu">
+                    <line x1="4" x2="20" y1="12" y2="12" />
+                    <line x1="4" x2="20" y1="6" y2="6" />
+                    <line x1="4" x2="20" y1="18" y2="18" />
+                </svg>
+            </button>
+        </div>
+    </section>
+
+    <!-- 3rd: Workspace Data Table View -->
+    <div class="workspace-table">
+        <div class="data-table-container">
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Last Opened</th>
+                        <th>Size / Created</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ALF</td>
+                        <td>23 minutes ago</td>
+                        <td>3.6 MB / Aug 19, 2024 </td>
+                    </tr>
+                    <tr>
+                        <td>ALF</td>
+                        <td>23 minutes ago</td>
+                        <td>3.6 MB / Aug 19, 2024 </td>
+                    </tr>
+                    <tr>
+                        <td>ALF</td>
+                        <td>23 minutes ago</td>
+                        <td>3.6 MB / Aug 19, 2024 </td>
+                    </tr>
+                    <tr>
+                        <td>ALF</td>
+                        <td>23 minutes ago</td>
+                        <td>3.6 MB / Aug 19, 2024 </td>
+                    </tr>
+                    <tr>
+                        <td>ALF</td>
+                        <td>23 minutes ago</td>
+                        <td>3.6 MB / Aug 19, 2024 </td>
+                    </tr>
+                    <tr>
+                        <td>ALF</td>
+                        <td>23 minutes ago</td>
+                        <td>3.6 MB / Aug 19, 2024 </td>
+                    </tr>
+                    <tr>
+                        <td>ALF</td>
+                        <td>23 minutes ago</td>
+                        <td>3.6 MB / Aug 19, 2024 </td>
+                    </tr>
+                    <tr>
+                        <td>ALF</td>
+                        <td>23 minutes ago</td>
+                        <td>3.6 MB / Aug 19, 2024 </td>
+                    </tr>
+                    <tr>
+                        <td>ALF</td>
+                        <td>23 minutes ago</td>
+                        <td>3.6 MB / Aug 19, 2024 </td>
+                    </tr>
+                    <tr>
+                        <td>ALF</td>
+                        <td>23 minutes ago</td>
+                        <td>3.6 MB / Aug 19, 2024 </td>
+                    </tr>
+                    <tr>
+                        <td>ALF</td>
+                        <td>23 minutes ago</td>
+                        <td>3.6 MB / Aug 19, 2024 </td>
+                    </tr>
+                    <tr>
+                        <td>ALF</td>
+                        <td>23 minutes ago</td>
+                        <td>3.6 MB / Aug 19, 2024 </td>
+                    </tr>
+                    <tr>
+                        <td>ALF</td>
+                        <td>23 minutes ago</td>
+                        <td>3.6 MB / Aug 19, 2024 </td>
+                    </tr>
+                    <tr>
+                        <td>ALF</td>
+                        <td>23 minutes ago</td>
+                        <td>3.6 MB / Aug 19, 2024 </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- 4th: Footer Bottom-->
+    <div class="footer-desktop">
+        <h1>© MIC Global 2023</h1>
+        <div class="user-click">
+            <h1>Privacy</h1>
+            <h1>Terms of Use</h1>
+        </div>
+    </div>
+
+</body>
+
+</html>

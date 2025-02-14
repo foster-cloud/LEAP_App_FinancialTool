@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="dashstyle.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <!-- 1st Lvl: Top Nav Bar -->
+    <div class="nav-blue-header">
+
+        <!-- L.H.S Content -->
+        <div class="home-button-logo">
+            <!-- Home Icon: User Navigating to Workspace List -->
+            <a href="#" class="home-icon-main" target="_self">
+                <svg width="28" height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M14.0003 2.94922L1.16699 14.4997H4.66699V24.9997H11.667V17.9997H16.3337V24.9997H23.3337V14.4997H26.8337L14.0003 2.94922Z"
+                        fill="#00A9F4" />
+                </svg>
+            </a>
+            <!-- Main-Logo: MIC Branding -->
+            <div class="logo-right">
+                <div class="logo-main">
+                    <img src="/Images/MIC-Global.svg" alt="MIC Logo">
+                    <div class="vertical-line"></div> <!-- Vertical line div -->
+                    <h3 class="logo-text">MiConnect</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- Center: Workspace Change Option -->
+        <div class="mid-workspace">
+            <div class="workspace-dropdown">
+                <!-- Title of Workspace -->
+                <h3>MacLaren</h3>
+                <!-- Dropdown Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-chevron-down">
+                    <path d="m6 9 6 6 6-6" />
+                </svg>
+            </div>
+        </div>
+
+        <!-- R.H.S Content -->
+        <div class="user-setting">
+
+            <!-- Search Feature:01 -->
+            <div class="user-setting__search-feature">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-search">
+                    <circle cx="11" cy="11" r="8" />
+                    <path d="m21 21-4.3-4.3" />
+                </svg>
+                <span>
+                    <!-- <input type="text" placeholder="Search..."> -->
+                    Search
+                </span>
+            </div>
+
+            <!-- User Logout:02 -->
+            <div class="user-logout">
+                <img class="user-icon" src="/Images/user-circle.svg" alt="user profile circle">
+                <h5 class="user-name">Dinesh</h5>
+                <!-- <img class="dropdown-icon" src="/Images/chevron-down.svg" alt="drop icon"> -->
+                <svg class="dropdown-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-chevron-down">
+                    <path d="m6 9 6 6 6-6" />
+                </svg>
+            </div>
+
+            <!-- FQA:03 -->
+            <!-- <img class="faq-icon" src="/Images/help-circle.svg" alt="FAQ link"> -->
+            <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-circle-help">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+                <path d="M12 17h.01" />
+            </svg>
+
+            <!-- Setting:04 -->
+            <!-- <img class="settings-icon" src="/Images/settings.svg" alt="Admin Settings"> -->
+            <svg class="settings-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-settings">
+                <path
+                    d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z" />
+                <circle cx="12" cy="12" r="3" />
+            </svg>
+        </div>
+    </div>
+
+    <!-- 2nd Lvl: Side-Menu and Data Table View -->
+    <div class="side-menu-table">
+        <!-- Side Menu -->
+        <div class="side-menu">
+            <!-- Expand/ Collapse Side-Menu: LVL-01 -->
+            <div class="side-menu__action">
+                <h3 id="side-menu__action__title" class="side-menu__action__title">MENU</h3>
+                <span id="side-menu__action--collapse" class="side-menu__action--collapse">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-chevrons-left">
+                        <path d="m11 17-5-5 5-5" />
+                        <path d="m18 17-5-5 5-5" />
+                    </svg>
+                </span>
+                <span id="side-menu__action--expand" class="side-menu__action--expand" style="display:none;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-chevrons-right">
+                        <path d="m6 17 5-5-5-5" />
+                        <path d="m13 17 5-5-5-5" />
+                    </svg>
+                </span>
+            </div>
+            <!-- Tab-List: LVL-02 -->
+            <ul class="side-menu__tab-list">
+                <!-- Tab-01 -->
+                <li class="side-menu__tab-list--active">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-layout-grid">
+                            <rect width="7" height="7" x="3" y="3" rx="1" />
+                            <rect width="7" height="7" x="14" y="3" rx="1" />
+                            <rect width="7" height="7" x="14" y="14" rx="1" />
+                            <rect width="7" height="7" x="3" y="14" rx="1" />
+                        </svg>
+                        <span>My Task</span>
+                    </a>
+                </li>
+                <!-- Tab-02 -->
+                <li>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-layout-grid">
+                            <rect width="7" height="7" x="3" y="3" rx="1" />
+                            <rect width="7" height="7" x="14" y="3" rx="1" />
+                            <rect width="7" height="7" x="14" y="14" rx="1" />
+                            <rect width="7" height="7" x="3" y="14" rx="1" />
+                        </svg>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <!-- Tab-03 -->
+                <li>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-layout-grid">
+                            <rect width="7" height="7" x="3" y="3" rx="1" />
+                            <rect width="7" height="7" x="14" y="3" rx="1" />
+                            <rect width="7" height="7" x="14" y="14" rx="1" />
+                            <rect width="7" height="7" x="3" y="14" rx="1" />
+                        </svg>
+                        <span>Reports</span>
+                    </a>
+                </li>
+                <!-- Tab-04 -->
+                <li>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-layout-grid">
+                            <rect width="7" height="7" x="3" y="3" rx="1" />
+                            <rect width="7" height="7" x="14" y="3" rx="1" />
+                            <rect width="7" height="7" x="14" y="14" rx="1" />
+                            <rect width="7" height="7" x="3" y="14" rx="1" />
+                        </svg>
+                        <span>Policy</span>
+                    </a>
+                </li>
+                <!-- Tab-05 -->
+                <li>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-layout-grid">
+                            <rect width="7" height="7" x="3" y="3" rx="1" />
+                            <rect width="7" height="7" x="14" y="3" rx="1" />
+                            <rect width="7" height="7" x="14" y="14" rx="1" />
+                            <rect width="7" height="7" x="3" y="14" rx="1" />
+                        </svg>
+                        <span>Vehicle Damage</span>
+                    </a>
+                </li>
+                <!-- Tab-06 -->
+                <li>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-layout-grid">
+                            <rect width="7" height="7" x="3" y="3" rx="1" />
+                            <rect width="7" height="7" x="14" y="3" rx="1" />
+                            <rect width="7" height="7" x="14" y="14" rx="1" />
+                            <rect width="7" height="7" x="3" y="14" rx="1" />
+                        </svg>
+                        <span>Issue</span>
+                    </a>
+                </li>
+                <!-- Tab-07 -->
+                <li>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-layout-grid">
+                            <rect width="7" height="7" x="3" y="3" rx="1" />
+                            <rect width="7" height="7" x="14" y="3" rx="1" />
+                            <rect width="7" height="7" x="14" y="14" rx="1" />
+                            <rect width="7" height="7" x="3" y="14" rx="1" />
+                        </svg>
+                        <span>Infra Ticket</span>
+                    </a>
+                </li>
+                <!-- Tab-08 -->
+                <li>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-layout-grid">
+                            <rect width="7" height="7" x="3" y="3" rx="1" />
+                            <rect width="7" height="7" x="14" y="3" rx="1" />
+                            <rect width="7" height="7" x="14" y="14" rx="1" />
+                            <rect width="7" height="7" x="3" y="14" rx="1" />
+                        </svg>
+                        <span>Projects</span>
+                    </a>
+                </li>
+                <!-- Tab-09 -->
+                <li>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-layout-grid">
+                            <rect width="7" height="7" x="3" y="3" rx="1" />
+                            <rect width="7" height="7" x="14" y="3" rx="1" />
+                            <rect width="7" height="7" x="14" y="14" rx="1" />
+                            <rect width="7" height="7" x="3" y="14" rx="1" />
+                        </svg>
+                        <span>Support Ticket</span>
+                    </a>
+                </li>
+            </ul>
+            <!-- Company Branding: LVL-03 -->
+            <div class="side-menu__powered-by">
+                <p>Powered by</p>
+                <span><img src="/Images/MICology-Logo.png" alt=""></span>
+            </div>
+        </div>
+
+        <!-- Title and Tools Above Table -->
+        <!-- Data Table View -->
+        <div class="data-table">
+
+            <!-- Title + Tools  | Lvl: 01 -->
+            <div class="table-title-tool">
+                <!-- Title Side: L.H.S. -->
+                <div class="table-title-tool__name-action">
+                    <h1>My Tasks</h1>
+                    <span class="user-selection">
+                        <h3><a href="#">Favourite</a></h3>
+                        <div class="vertical"></div>
+                        <h3><a href="#">View All</a></h3>
+                    </span>
+                </div>
+
+                <!-- Tools Side: R.H.S. -->
+                <div class="table-title-tool_action-tools-search">
+                    <ul class="action-tools">
+                        <!-- Count-01 -->
+                        <li>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-layout-grid">
+                                    <rect width="7" height="7" x="3" y="3" rx="1" />
+                                    <rect width="7" height="7" x="14" y="3" rx="1" />
+                                    <rect width="7" height="7" x="14" y="14" rx="1" />
+                                    <rect width="7" height="7" x="3" y="14" rx="1" />
+                                </svg>
+                                <span>Full View</span>
+                            </a>
+                        </li>
+                        <!-- Count-02 -->
+                        <li>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-layout-grid">
+                                    <rect width="7" height="7" x="3" y="3" rx="1" />
+                                    <rect width="7" height="7" x="14" y="3" rx="1" />
+                                    <rect width="7" height="7" x="14" y="14" rx="1" />
+                                    <rect width="7" height="7" x="3" y="14" rx="1" />
+                                </svg>
+                                <span>Create New</span>
+                            </a>
+                        </li>
+                        <!-- Count-03 -->
+                        <li>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-layout-grid">
+                                    <rect width="7" height="7" x="3" y="3" rx="1" />
+                                    <rect width="7" height="7" x="14" y="3" rx="1" />
+                                    <rect width="7" height="7" x="14" y="14" rx="1" />
+                                    <rect width="7" height="7" x="3" y="14" rx="1" />
+                                </svg>
+                                <span>Export</span>
+                            </a>
+                        </li>
+                        <!-- Count-04 -->
+                        <li>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-layout-grid">
+                                    <rect width="7" height="7" x="3" y="3" rx="1" />
+                                    <rect width="7" height="7" x="14" y="3" rx="1" />
+                                    <rect width="7" height="7" x="14" y="14" rx="1" />
+                                    <rect width="7" height="7" x="3" y="14" rx="1" />
+                                </svg>
+                                <span>Filter By</span>
+                            </a>
+                        </li>
+                        <!-- Count-05 -->
+                        <div class="search-container">
+                            <input type="text" placeholder="Search table..." />
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"
+                                stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-search">
+                                <circle cx="11" cy="11" r="8" />
+                                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                            </svg>
+                        </div>
+
+                </div>
+            </div>
+
+            <!-- Table + Pagination_Records | Lvl:02 -->
+            <div class="table-pagination-records">
+                <!-- Table-Content -->
+                <table class="data-table__content-table">
+                    <thead>
+                        <tr>
+                            <th>
+                                <!-- Table Sorting -->
+                                <!-- JS pending to implement -->
+                                <header class="table-header-shorting">
+                                    Header 1
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-move-down">
+                                            <path d="M8 18L12 22L16 18" />
+                                            <path d="M12 2V22" />
+                                        </svg>
+                                    </span>
+                                </header>
+                            </th>
+                            <th>
+                                <!-- Table Sorting -->
+                                <!-- JS pending to implement -->
+                                <header class="table-header-shorting">
+                                    Header 2
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-move-down">
+                                            <path d="M8 18L12 22L16 18" />
+                                            <path d="M12 2V22" />
+                                        </svg>
+                                    </span>
+                                </header>
+                            </th>
+                            <th>
+                                <!-- Table Sorting -->
+                                <!-- JS pending to implement -->
+                                <header class="table-header-shorting">
+                                    Header 3
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-move-down">
+                                            <path d="M8 18L12 22L16 18" />
+                                            <path d="M12 2V22" />
+                                        </svg>
+                                    </span>
+                                </header>
+                            </th>
+                            <th>
+                                <!-- Table Sorting -->
+                                <!-- JS pending to implement -->
+                                <header class="table-header-shorting">
+                                    Header 4
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-move-down">
+                                            <path d="M8 18L12 22L16 18" />
+                                            <path d="M12 2V22" />
+                                        </svg>
+                                    </span>
+                                </header>
+                            </th>
+                            <th>
+                                <!-- Table Sorting -->
+                                <!-- JS pending to implement -->
+                                <header class="table-header-shorting">
+                                    Header 5
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-move-down">
+                                            <path d="M8 18L12 22L16 18" />
+                                            <path d="M12 2V22" />
+                                        </svg>
+                                    </span>
+                                </header>
+                            </th>
+                            <th>
+                                <!-- Table Sorting -->
+                                <!-- JS pending to implement -->
+                                <header class="table-header-shorting">
+                                    Header 6
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-move-down">
+                                            <path d="M8 18L12 22L16 18" />
+                                            <path d="M12 2V22" />
+                                        </svg>
+                                    </span>
+                                </header>
+                            </th>
+                            <th>
+                                <!-- Table Sorting -->
+                                <!-- JS pending to implement -->
+                                <header class="table-header-shorting">
+                                    Header 7
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-move-down">
+                                            <path d="M8 18L12 22L16 18" />
+                                            <path d="M12 2V22" />
+                                        </svg>
+                                    </span>
+                                </header>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <!-- Checkbox and Label + Favorite -->
+                                <div class="checkbox-hyperlink-action">
+                                    <!-- As user select > Above tools activated -->
+                                    <input type="checkbox" id="proj0045" name="proj0045" checked />
+                                    <!-- New UI will open within same screen w.r.t. Code -->
+                                    <label for="proj0045"><a href="#" target="_self">PROJ0045</a></label>
+                                    <!-- Make Any Records Favorite  -->
+                                    <div class="container">
+                                        <i class="fas fa-star favorite-star"></i>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>Row 1, Cell 2</td>
+                            <td>Row 1, Cell 3</td>
+                            <td>Row 1, Cell 4</td>
+                            <td>Row 1, Cell 5</td>
+                            <td>Row 1, Cell 6</td>
+                            <td>Row 1, Cell 7</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <!-- Checkbox and Label + Favorite -->
+                                <div class="checkbox-hyperlink-action">
+                                    <!-- As user select > Above tools activated -->
+                                    <input type="checkbox" id="proj0045" name="proj0045" checked />
+                                    <!-- New UI will open within same screen w.r.t. Code -->
+                                    <label for="proj0045"><a href="#" target="_self">PROJ0045</a></label>
+                                    <!-- Make Any Records Favorite  -->
+                                    <div class="container">
+                                        <i class="fas fa-star favorite-star"></i>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>Row 2, Cell 2</td>
+                            <td>Row 2, Cell 3</td>
+                            <td>Row 2, Cell 4</td>
+                            <td>Row 2, Cell 5</td>
+                            <td>Row 2, Cell 6</td>
+                            <td>Row 2, Cell 7</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <!-- Checkbox and Label + Favorite -->
+                                <div class="checkbox-hyperlink-action">
+                                    <!-- As user select > Above tools activated -->
+                                    <input type="checkbox" id="proj0045" name="proj0045" checked />
+                                    <!-- New UI will open within same screen w.r.t. Code -->
+                                    <label for="proj0045"><a href="#" target="_self">PROJ0045</a></label>
+                                    <!-- Make Any Records Favorite  -->
+                                    <div class="container">
+                                        <i class="fas fa-star favorite-star"></i>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>Row 3, Cell 2</td>
+                            <td>Row 3, Cell 3</td>
+                            <td>Row 3, Cell 4</td>
+                            <td>Row 3, Cell 5</td>
+                            <td>Row 3, Cell 6</td>
+                            <td>Row 3, Cell 7</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <!-- Checkbox and Label + Favorite -->
+                                <div class="checkbox-hyperlink-action">
+                                    <!-- As user select > Above tools activated -->
+                                    <input type="checkbox" id="proj0045" name="proj0045" checked />
+                                    <!-- New UI will open within same screen w.r.t. Code -->
+                                    <label for="proj0045"><a href="#" target="_self">PROJ0045</a></label>
+                                    <!-- Make Any Records Favorite  -->
+                                    <div class="container">
+                                        <i class="fas fa-star favorite-star"></i>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>Row 4, Cell 2</td>
+                            <td>Row 4, Cell 3</td>
+                            <td>Row 4, Cell 4</td>
+                            <td>Row 4, Cell 5</td>
+                            <td>Row 4, Cell 6</td>
+                            <td>Row 4, Cell 7</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <!-- Checkbox and Label + Favorite -->
+                                <div class="checkbox-hyperlink-action">
+                                    <!-- As user select > Above tools activated -->
+                                    <input type="checkbox" id="proj0045" name="proj0045" checked />
+                                    <!-- New UI will open within same screen w.r.t. Code -->
+                                    <label for="proj0045"><a href="#" target="_self">PROJ0045</a></label>
+                                    <!-- Make Any Records Favorite  -->
+                                    <div class="container">
+                                        <i class="fas fa-star favorite-star"></i>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>Row 5, Cell 2</td>
+                            <td>Row 5, Cell 3</td>
+                            <td>Row 5, Cell 4</td>
+                            <td>Row 5, Cell 5</td>
+                            <td>Row 5, Cell 6</td>
+                            <td>Row 5, Cell 7</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <!-- Checkbox and Label + Favorite -->
+                                <div class="checkbox-hyperlink-action">
+                                    <!-- As user select > Above tools activated -->
+                                    <input type="checkbox" id="proj0045" name="proj0045" checked />
+                                    <!-- New UI will open within same screen w.r.t. Code -->
+                                    <label for="proj0045"><a href="#" target="_self">PROJ0045</a></label>
+                                    <!-- Make Any Records Favorite  -->
+                                    <div class="container">
+                                        <i class="fas fa-star favorite-star"></i>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>Row 6, Cell 2</td>
+                            <td>Row 6, Cell 3</td>
+                            <td>Row 6, Cell 4</td>
+                            <td>Row 6, Cell 5</td>
+                            <td>Row 6, Cell 6</td>
+                            <td>Row 6, Cell 7</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <!-- Checkbox and Label + Favorite -->
+                                <div class="checkbox-hyperlink-action">
+                                    <!-- As user select > Above tools activated -->
+                                    <input type="checkbox" id="proj0045" name="proj0045" checked />
+                                    <!-- New UI will open within same screen w.r.t. Code -->
+                                    <label for="proj0045"><a href="#" target="_self">PROJ0045</a></label>
+                                    <!-- Make Any Records Favorite  -->
+                                    <div class="container">
+                                        <i class="fas fa-star favorite-star"></i>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>Row 7, Cell 2</td>
+                            <td>Row 7, Cell 3</td>
+                            <td>Row 7, Cell 4</td>
+                            <td>Row 7, Cell 5</td>
+                            <td>Row 7, Cell 6</td>
+                            <td>Row 7, Cell 7</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- Pagination and Page Records | Lvl:03 -->
+                <div class="dtable-pagination">
+                    <ul class="dtable-pagination__page-numbers">
+                        <!-- Page Count and User action:01 -->
+                        <li class="pagination">
+                            <!-- SVG: Left -->
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-chevron-left">
+                                    <path d="m15 18-6-6 6-6" />
+                                </svg>
+                            </a>
+
+                            <!-- Active-Page -->
+                            <button class="active-page">1</button>
+
+                            <!-- SVG: Right -->
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-chevron-right">
+                                    <path d="m9 18 6-6-6-6" />
+                                </svg>
+                            </a>
+
+                            <!-- Text Description -->
+                            <p>Page 6 of 20</p>
+                        </li>
+
+                        <!-- Record per Page:02 -->
+                        <li class="records-per-page">
+                            <!-- Text Description -->
+                            <p>Records</p>
+
+                            <!-- Active-Page -->
+                            <button class="active-record">
+                                50
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-chevron-down">
+                                    <path d="m6 9 6 6 6-6" />
+                                </svg>
+                            </button>
+
+                            <!-- Text Description -->
+                            <p>rows per page</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- 3rd Lvl : Footer -->
+    <div class="footer-desktop">
+        <h1>© MIC Global 2023</h1>
+        <div class="user-click">
+            <h1>Privacy</h1>
+            <h1>Terms of Use</h1>
+        </div>
+    </div>
+</body>
+
+</html>

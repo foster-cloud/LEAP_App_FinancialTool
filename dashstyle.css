@@ -1,0 +1,758 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 1st Lvl: Top */
+
+/* Top Navigation */
+.nav-blue-header {
+    display: flex;
+    width: 100%;
+    /* Use 100% width to make it responsive */
+    /* padding: 8px 24px; */
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0066ff;
+    height: 48px;
+}
+
+/* L.H.S. Content */
+
+/* Home + Logo */
+.home-button-logo {
+    display: flex;
+    flex: 1;
+    justify-content: flex-start;
+    align-items: center;
+    align-items: center;
+    gap: 16px;
+    padding: 8px 24px;
+}
+
+.home-icon-main>svg:hover {
+    cursor: pointer;
+    background-color: #1434cb;
+    border-radius: 2px;
+}
+
+.logo-main {
+    display: flex;
+    align-items: center;
+}
+
+.logo-main:hover {
+    cursor: pointer;
+}
+
+.vertical-line {
+    width: 1px;
+    /* Line width */
+    height: 28px;
+    /* Line height */
+    background-color: white;
+    /* Line color */
+    margin: 0 16px;
+    /* Spacing around the line */
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: 400;
+    color: white;
+}
+
+/* Center */
+.mid-workspace {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.workspace-dropdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00A9F4;
+    color: white;
+    height: 100%;
+    margin: 0;
+    gap: 8px;
+    padding: 8px 8px 12px 16px;
+}
+
+.workspace-dropdown h3 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.workspace-dropdown svg {
+    color: white;
+    stroke: 1px;
+    width: 24px;
+    height: 24px;
+}
+
+.workspace-dropdown svg:hover {
+    background-color: #1434cb;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+/* R.H.S Content */
+.user-setting {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 24px;
+    padding: 8px 24px;
+    height: 100%;
+}
+
+/* Search Feature */
+div.user-setting__search-feature {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    color: white;
+    align-items: center;
+    cursor: pointer;
+}
+
+.user-setting__search-feature:hover {
+    cursor: pointer;
+}
+
+
+/* Targeting SVG Image */
+.user-setting__search-feature svg {
+    width: 16px;
+    height: 16px;
+}
+
+
+/* Search Text */
+.user-setting__search-feature span {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+/* .user-setting__search-feature span input{
+    border: none;
+    height: 100%;
+    padding: 2px 4px;
+    border-radius: 4px;
+    width: 60px;
+    fill: none;
+} */
+
+/* Target SVG */
+.user-setting svg {
+    color: white;
+    stroke-width: 1px;
+    width: 24px;
+    height: 24px;
+}
+
+/* User Name + Logout dropdown */
+
+.user-logout {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+}
+
+.user-logout svg.dropdown-icon {
+    color: white;
+    width: 24px;
+    height: 24px;
+    stroke-width: 1;
+}
+
+.user-logout .user-name {
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    white-space: nowrap
+}
+
+.dropdown-icon,
+.faq-icon,
+.settings-icon {
+    cursor: pointer;
+    /* Change cursor to pointer on hover */
+    border-radius: 2px;
+}
+
+.dropdown-icon:hover,
+.faq-icon:hover,
+.settings-icon:hover {
+    background-color: #1434cb;
+}
+
+
+
+/* 2nd Lvl : Side Menu and Data Table */
+
+.side-menu-table {
+    display: flex;
+    height: calc(100vh - 88px);
+    flex-direction: row;
+    /* gap: 24px; */
+}
+
+
+/* Side Menu */
+.side-menu {
+    display: flex;
+    flex-direction: column;
+    /* flex-grow: 224px; */
+    width: 224px;
+    /* height: ; */
+    background-color: #F2F5F7;
+}
+
+/* Expand and Collapse Side-Menu */
+.side-menu__action {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: darkgoldenrod; */
+    padding: 14px 24px;
+    margin: 0;
+}
+
+.side-menu__action__title {
+    font-size: 14px;
+    font-weight: 400;
+    color: #737373;
+}
+
+
+.side-menu__action--collapse span svg,
+.side-menu__action--expand span svg {
+    width: 20px;
+    height: 20px;
+    stroke-width: 2px;
+    color: #333;
+}
+
+/* Multiple Tab-List to access */
+.side-menu__tab-list {
+    list-style: none;
+    /* Remove bullet points */
+    margin: 0;
+    /* Remove default margin */
+    padding: 20px 0px;
+    /* Remove default padding */
+    height: 80%;
+    border-top: 1px solid #E1DFDD;
+    border-bottom: 1px solid #E1DFDD;
+}
+
+.side-menu__tab-list li {
+    padding: 8px 24px;
+    margin: 0;
+    border-left: 2px solid #F2F5F7;
+}
+
+.side-menu__tab-list a {
+    text-decoration: none;
+    /* Remove underline */
+    color: #737373;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+}
+
+.side-menu__tab-list a svg {
+    width: 20px;
+    height: 20px;
+    stroke-width: 1px;
+}
+
+.side-menu__tab-list a span {
+    overflow: hidden;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.side-menu__tab-list li:hover {
+    background-color: #e6e8ee;
+    cursor: pointer;
+    border-color: #0066ff !important;
+}
+
+.side-menu__tab-list--active {
+    background-color: #CBDEF8;
+    cursor: pointer;
+    border-color: #0066ff !important;
+}
+
+.side-menu__tab-list li:hover a,
+.side-menu__tab-list--active a {
+    color: #0066ff;
+    /* Active and hover text color */
+}
+
+/* Powered by */
+.side-menu__powered-by {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 8px;
+    padding: 8px 24px;
+    margin-top: 100%;
+}
+
+.side-menu__powered-by p {
+    font-size: 12px;
+    color: #737373;
+}
+
+.side-menu__powered-by img {
+    height: 32px;
+    scale: 2x;
+}
+
+
+/* Above Data-Table */
+
+/* Data Table Content */
+.data-table {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+/* Title + Tools */
+.table-title-tool {
+    display: flex;
+    flex-direction: row;
+    /* flex: 1; */
+    height: 108px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 24px 24px 24px;
+}
+
+/* Defined div */
+.table-title-tool__name-action {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+/* Title of Tab */
+.table-title-tool__name-action h1 {
+    font-size: 32px;
+    font-weight: 400;
+    color: #333;
+}
+
+/* User Selection */
+.user-selection {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    /* Adjusted gap for better spacing */
+}
+
+.vertical {
+    width: 1px;
+    /* Vertical line thickness */
+    height: 13px;
+    /* Height of the vertical line */
+    background-color: #AAAAAA;
+    /* Color of the vertical line */
+}
+
+/* Make Favourite v/s View All */
+.user-selection h3 {
+    font-size: 13px;
+    font-weight: normal;
+    /* Explicitly set to normal */
+    color: #737373;
+    margin: 0;
+    /* Ensure no default margin affects layout */
+}
+
+.user-selection h3 a {
+    text-decoration: none;
+    color: #0066ff;
+    /* Ensure link has same color */
+}
+
+/* R.H.S. */
+/* Container */
+.action-tools {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    width: fit-content;
+    width: 40%;
+}
+
+/* List of Tools */
+.action-tools li {
+    padding: 0;
+    margin: 0;
+}
+
+/* Defining a links */
+.action-tools li a {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    text-decoration: none;
+    color: #737373;
+    font-size: 14px;
+    font-weight: 400;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.action-tools li a svg {}
+
+/* Defining Input Search */
+/* Search Container */
+.search-container {
+    display: flex;
+    align-items: center;
+    min-width: none;
+    margin: 0;
+    padding: 8px 16px;
+    border: 1px solid #e1dfdd;
+    /* Border for the search input */
+    border-radius: 2px;
+    background-color: #f6f6f6;
+    position: relative;
+}
+
+.search-container:focus-within {
+    border-color: #0066ff;
+    /* Darken border when focused */
+}
+
+/* Input field styling */
+.search-container input {
+    border: none;
+    /* Remove default border */
+    outline: none;
+    /* Remove outline */
+    flex-grow: 1;
+    /* Let the input take available space */
+    /* margin-right: 8px; Space between input and icon */
+    font-size: 14px;
+    /* Font size */
+    background-color: transparent;
+    /* Match container's background */
+}
+
+.search-container input::placeholder {
+    color: #737373;
+    /* Placeholder text color */
+}
+
+/* Search icon styling */
+.search-container svg {
+    flex-shrink: 0;
+    /* Prevent icon from shrinking */
+    color: #737373;
+    /* Icon color */
+    cursor: pointer;
+    /* Pointer cursor on icon */
+}
+
+
+/* Main Data-Table + Pagination */
+
+.table-pagination-records {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* flex: 1; */
+    height: calc(100% - 108px);
+    margin: 0 24px;
+}
+
+/* Table: Header and Row */
+.data-table__content-table {
+    border-collapse: collapse;
+    /* margin: 32px 24px; */
+    font-size: 14px;
+    flex: 1;
+    overflow: hidden;
+    border-radius: 2px;
+}
+
+/* Table Header Styling */
+.data-table__content-table thead th {
+    color: #333;
+    text-align: left;
+    font-weight: 600;
+    background-color: white;
+    /* Make header background consistent */
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+/* Table Body Styling */
+.data-table__content-table tbody td {
+    color: #737373;
+    text-align: left;
+    font-weight: normal;
+    border-left: 1px solid #d2d2d2;
+    /* Add default left border to avoid content shifting */
+}
+
+/* Adding Padding */
+.data-table__content-table th,
+.data-table__content-table td {
+    padding: 20px 16px;
+}
+
+/* Applying Border to Header Row */
+.data-table__content-table thead tr {
+    border: 1px solid #d2d2d2;
+}
+
+/* Applying Border to Body Row */
+.data-table__content-table tbody tr {
+    border: 1px solid #d2d2d2;
+}
+
+/* Sorting Feature */
+.table-header-sorting {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* Hover Effect */
+.data-table__content-table tbody tr:hover {
+    cursor: pointer;
+    border-left: 3px solid #0066ff;
+    background-color: rgba(0, 102, 255, 0.08);
+    overflow: hidden;
+}
+
+/* Ensuring Zebra Stripe */
+.data-table__content-table tbody tr:nth-of-type(even) {
+    background-color: #fafbfd;
+}
+
+/* Multi-action Header */
+.checkbox-hyperlink-action {
+    display: flex;
+    gap: 8px;
+}
+
+.checkbox-hyperlink-action input {
+    width: 16px;
+    height: 16px;
+    stroke: 1px;
+}
+
+.checkbox-hyperlink-action label a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #0066ff;
+}
+
+/* Favorite Hover and Selected */
+.checkbox-hyperlink-action .container i {
+    transition: 0.25s ease;
+    cursor: pointer;
+    color: #ccc;
+    font-size: 16px;
+}
+
+.checkbox-hyperlink-action .container i.selected {
+    color: #0066ff;
+}
+
+.checkbox-hyperlink-action .container i.hovered {
+    color: #6699ff;
+}
+
+
+/* Table - Pagination */
+
+/* Pagination */
+.dtable-pagination {
+    margin: 20px 40px 24px 24px;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+/* ul styling */
+.dtable-pagination__page-numbers {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dtable-pagination__page-numbers li {
+    list-style: none;
+}
+
+/* Page Number */
+.pagination {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.pagination a svg {
+    width: 20px;
+    height: 20px;
+    color: #333;
+    transition: color 0.25s;
+}
+
+.pagination a svg:hover {
+    cursor: pointer;
+    color: #0066ff;
+}
+
+/* Active Page */
+.pagination button {
+    font-size: 14px;
+    font-weight: normal;
+    text-align: center;
+    padding: 8px 24px;
+    border: 1px solid #E6E6E6;
+    color: #333;
+    border-radius: 2px;
+    background: none;
+    /* Remove default background */
+}
+
+.pagination p {
+    font-size: 14px;
+    font-weight: normal;
+    color: #737373;
+}
+
+/* Page Records */
+.records-per-page {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+    color: #737373;
+}
+
+.records-per-page button {
+    font-size: 14px;
+    font-weight: normal;
+    text-align: center;
+    padding: 8px 24px;
+    border: 1px solid #E6E6E6;
+    color: #333;
+    border-radius: 2px;
+    background: none;
+    /* Remove default background */
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* .records-per-page button svg {
+    transition: transform 0.25s;
+} */
+
+.records-per-page button:hover svg {
+    /* transform: rotate(180deg); */
+    cursor: pointer;
+}
+
+
+/* 3rd Lvl: Bottom */
+
+/* Footer */
+.footer-desktop {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+    color: #737373;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    text-align: center;
+    border-top: 1px solid #C1CCD6;
+}
+
+.footer-desktop h1 {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* Div for Clickable */
+.user-click {
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+}
+
+.user-click h1 {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.user-click h1:hover {
+    color: #0066ff;
+    cursor: pointer;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .nav-blue-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo-main {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .vertical-line {
+        display: block;
+        /* Display the vertical line on small screens */
+    }
+
+    .left-user-setting {
+        display: none;
+    }
+}

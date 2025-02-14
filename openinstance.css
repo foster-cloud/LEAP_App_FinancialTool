@@ -1,0 +1,293 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: poppins, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* Modal Overlay */
+.modal-overlay {
+    display: flex;
+    flex: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    /* Ensure the overlay takes the full height of the viewport */
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+/* OpenInstance Modal */
+.open_instance-modal {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 324px;
+    height: 100%;
+    border-radius: 0px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    /* overflow: auto; */
+    /* padding: 24px 16px; */
+}
+
+/* Lvl:01 | First Div: Title and Close */
+
+/* First Div: Modal Header */
+.modal-header {
+    display: flex;
+    /* flex: 1; */
+    width: 324px;
+    padding: 12px 24px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #C7C7C7;
+    background: #F6F7F9;
+}
+
+.modal-title {
+    margin: 0;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    color: #333;
+}
+
+
+/* Lvl:02 | Select All + Count_Timer */
+
+.open_list_action {
+    display: flex;
+    /* flex: 1; */
+    padding: 20px 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    /* flex: 1 0 0; */
+    align-self: stretch;
+    background: var(--White, #FFF);
+}
+
+
+/* Lvl:02.1 | One action to Close All */
+.open_list-select_all {
+    display: flex;
+    padding-right: 8px;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #EDEBE9;
+}
+
+
+.checkbox-select-all {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.open_list-select_all button {
+    display: flex;
+    padding: 2px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    border-radius: 1px;
+    background: #F0F0F0;
+    color: var(--Secondary, #5C5C5C);
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+
+
+
+/* Lvl:02.2 | Count + Timer  */
+.count-timer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+}
+
+.count-timer-title {
+    display: flex;
+    padding: 8px 4px;
+    align-items: flex-start;
+    border-radius: 8px;
+    background: #FCE0E5;
+    color: #BB697A;
+    leading-trim: both;
+    text-edge: cap;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+.count-timer-open {
+    display: flex;
+    width: 90px;
+    align-items: center;
+    gap: 8px;
+    color: var(--Secondary, #5C5C5C);
+    leading-trim: both;
+    text-edge: cap;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+/* Lvl:03 | OpenInstance List (Row) */
+
+/* div defined for Instance Open list as separate */
+
+/* 
+.instance-list{
+    overflow-y: auto;
+    display: flex;
+    flex: 28;
+} */
+
+.instance-list {
+    overflow-y: auto;
+    /* Ensures the scrollbar is always visible */
+    flex: 1;
+    /* max-height: 100%; Adjust based on your layout needs */
+    height: 300px;
+    /* Set this to whatever height makes sense for your layout */
+    /* background-color:rgb(244, 245, 252); */
+}
+
+
+/* Optional: Customize the scrollbar for WebKit browsers (like Chrome, Safari) */
+.instance-list::-webkit-scrollbar {
+    width: 6px;
+    /* Adjust width as needed */
+}
+
+.instance-list::-webkit-scrollbar-track {
+    background: #fafafa;
+    /* Track color */
+}
+
+.instance-list::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    /* Thumb color */
+    border-radius: 6px;
+    /* Optional: Rounded corners */
+}
+
+
+/* div containing Type with TabName  */
+.main_tab_based_list {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 16px;
+    /* background-color: #f1f1f1; */
+    gap: 20px;
+}
+
+
+.type_issue {
+    display: flex;
+    padding: 6px 4px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: 46px;
+    background: rgba(187, 105, 122, 0.08);
+    color: var(--Secondary, #5C5C5C);
+    leading-trim: both;
+    text-edge: cap;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+
+
+
+
+
+/* Open_List Instances */
+.open_list_row {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+    /* padding: 20px 16px; */
+}
+
+.open_list {
+    display: flex;
+    padding-bottom: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex: 1 0 0;
+    border-bottom: 1px solid #EDEBE9;
+}
+
+.open_list-number_tab_info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    align-self: stretch;
+}
+
+.open_list-number_tab_info h3 {
+    color: var(--Primary, #333);
+    leading-trim: both;
+    text-edge: cap;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.open_list-number_tab_info h4 {
+    color: var(--Secondary, #5C5C5C);
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "IBM Plex Sans";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.open_list-time-stamp {
+    width: 90px;
+    color: var(--Secondary, #5C5C5C);
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "IBM Plex Sans";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}

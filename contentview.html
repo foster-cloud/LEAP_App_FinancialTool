@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TableRow-ContentView</title>
+    <link rel="stylesheet" href="contentview.css">
+    <script defer src="contentview.js"></script>
+</head>
+
+<body>
+    <!-- After Selecting the Table-Row | -->
+    <div class="requirement">
+        Requirement: AfterRowSelect > SideNav, DisplayContent [side by side]
+    </div>
+
+    <br>
+    <br>
+
+    <!-- Defining Parent div  -->
+    <div class="container-box">
+
+        <!-- Lvl:01 -->
+        <!-- NumberCode + Status and Toolbar + Close -->
+        <div class="number-code-tool-list">
+
+            <!-- L.H.S. | Code  Number-->
+            <div class="code-status">
+                <h3>ISSU001906</h3>
+
+                <!-- Vertical Line- Separator -->
+                <div class="vertical-line"></div>
+
+                <!-- Status btn -->
+                <div class="button-with-label">
+                    <label for="myButton">Status:</label>
+                    <button id="myButton">Closed</button>
+                </div>
+            </div>
+
+            <!-- R.H.S. | Tool-list and Close Btn-->
+            <div class="row-view-action-tools">
+
+                <!-- Tool-List -->
+                <div class="tool-list-box">
+                    <ul class="action-tools">
+                        <!-- Count-01 -->
+                        <li>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-layout-grid">
+                                    <rect width="7" height="7" x="3" y="3" rx="1" />
+                                    <rect width="7" height="7" x="14" y="3" rx="1" />
+                                    <rect width="7" height="7" x="14" y="14" rx="1" />
+                                    <rect width="7" height="7" x="3" y="14" rx="1" />
+                                </svg>
+                                <span>Full View</span>
+                            </a>
+                        </li>
+                        <!-- Count-02 -->
+                        <li>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-layout-grid">
+                                    <rect width="7" height="7" x="3" y="3" rx="1" />
+                                    <rect width="7" height="7" x="14" y="3" rx="1" />
+                                    <rect width="7" height="7" x="14" y="14" rx="1" />
+                                    <rect width="7" height="7" x="3" y="14" rx="1" />
+                                </svg>
+                                <span>Create New</span>
+                            </a>
+                        </li>
+                        <!-- Count-03 -->
+                        <li>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-layout-grid">
+                                    <rect width="7" height="7" x="3" y="3" rx="1" />
+                                    <rect width="7" height="7" x="14" y="3" rx="1" />
+                                    <rect width="7" height="7" x="14" y="14" rx="1" />
+                                    <rect width="7" height="7" x="3" y="14" rx="1" />
+                                </svg>
+                                <span>Export</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Vertical Line- Separator -->
+                <div class="vertical-line"></div>
+
+                <!-- Close Action: btn -->
+                <div class="close-with-label">
+                    <!-- <button id="myButton">Closed</button> -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <rect width="20" height="20" rx="2" fill="#0066FF" />
+                        <path d="M15 5L5 15" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M5 5L15 15" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <label for="myclose">Close</label>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Lvl:02 -->
+        <div class="selected-row-side-nav-content-view">
+
+            <!-- Side Menu -->
+            <div class="side-menu">
+                <!-- Expand/ Collapse Side-Menu: LVL-01 -->
+                <div class="side-menu__action">
+                    <h3 id="side-menu__action__title" class="side-menu__action__title">MENU LIST</h3>
+                    <span id="side-menu__action--collapse" class="side-menu__action--collapse">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-chevrons-left">
+                            <path d="m11 17-5-5 5-5" />
+                            <path d="m18 17-5-5 5-5" />
+                        </svg>
+                    </span>
+                    <span id="side-menu__action--expand" class="side-menu__action--expand" style="display:none;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-chevrons-right">
+                            <path d="m6 17 5-5-5-5" />
+                            <path d="m13 17 5-5-5-5" />
+                        </svg>
+                    </span>
+                </div>
+                <!-- Tab-List: LVL-02 -->
+                <ul class="side-menu__tab-list">
+                    <!-- Tab-01 -->
+                    <li class="side-menu__tab-list--active">
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-layout-grid">
+                                <rect width="7" height="7" x="3" y="3" rx="1" />
+                                <rect width="7" height="7" x="14" y="3" rx="1" />
+                                <rect width="7" height="7" x="14" y="14" rx="1" />
+                                <rect width="7" height="7" x="3" y="14" rx="1" />
+                            </svg>
+                            <span>My Task</span>
+                        </a>
+                    </li>
+                    <!-- Tab-02 -->
+                    <li>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-layout-grid">
+                                <rect width="7" height="7" x="3" y="3" rx="1" />
+                                <rect width="7" height="7" x="14" y="3" rx="1" />
+                                <rect width="7" height="7" x="14" y="14" rx="1" />
+                                <rect width="7" height="7" x="3" y="14" rx="1" />
+                            </svg>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <!-- Tab-03 -->
+                    <li>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-layout-grid">
+                                <rect width="7" height="7" x="3" y="3" rx="1" />
+                                <rect width="7" height="7" x="14" y="3" rx="1" />
+                                <rect width="7" height="7" x="14" y="14" rx="1" />
+                                <rect width="7" height="7" x="3" y="14" rx="1" />
+                            </svg>
+                            <span>Reports</span>
+                        </a>
+                    </li>
+                    <!-- Tab-04 -->
+                    <li>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-layout-grid">
+                                <rect width="7" height="7" x="3" y="3" rx="1" />
+                                <rect width="7" height="7" x="14" y="3" rx="1" />
+                                <rect width="7" height="7" x="14" y="14" rx="1" />
+                                <rect width="7" height="7" x="3" y="14" rx="1" />
+                            </svg>
+                            <span>Policy</span>
+                        </a>
+                    </li>
+                    <!-- Tab-05 -->
+                    <li>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-layout-grid">
+                                <rect width="7" height="7" x="3" y="3" rx="1" />
+                                <rect width="7" height="7" x="14" y="3" rx="1" />
+                                <rect width="7" height="7" x="14" y="14" rx="1" />
+                                <rect width="7" height="7" x="3" y="14" rx="1" />
+                            </svg>
+                            <span>Vehicle Damage</span>
+                        </a>
+                    </li>
+                    <!-- Tab-06 -->
+                    <li>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-layout-grid">
+                                <rect width="7" height="7" x="3" y="3" rx="1" />
+                                <rect width="7" height="7" x="14" y="3" rx="1" />
+                                <rect width="7" height="7" x="14" y="14" rx="1" />
+                                <rect width="7" height="7" x="3" y="14" rx="1" />
+                            </svg>
+                            <span>Issue</span>
+                        </a>
+                    </li>
+                    <!-- Tab-07 -->
+                    <li>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-layout-grid">
+                                <rect width="7" height="7" x="3" y="3" rx="1" />
+                                <rect width="7" height="7" x="14" y="3" rx="1" />
+                                <rect width="7" height="7" x="14" y="14" rx="1" />
+                                <rect width="7" height="7" x="3" y="14" rx="1" />
+                            </svg>
+                            <span>Infra Ticket</span>
+                        </a>
+                    </li>
+                    <!-- Tab-08 -->
+                    <li>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-layout-grid">
+                                <rect width="7" height="7" x="3" y="3" rx="1" />
+                                <rect width="7" height="7" x="14" y="3" rx="1" />
+                                <rect width="7" height="7" x="14" y="14" rx="1" />
+                                <rect width="7" height="7" x="3" y="14" rx="1" />
+                            </svg>
+                            <span>Projects</span>
+                        </a>
+                    </li>
+                    <!-- Tab-09 -->
+                    <li>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-layout-grid">
+                                <rect width="7" height="7" x="3" y="3" rx="1" />
+                                <rect width="7" height="7" x="14" y="3" rx="1" />
+                                <rect width="7" height="7" x="14" y="14" rx="1" />
+                                <rect width="7" height="7" x="3" y="14" rx="1" />
+                            </svg>
+                            <span>Support Ticket</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- R.H.S. -->
+            <div class="content-view-page">
+                <div class="content-display">
+                    <!-- Lvl:01 -->
+                    <div class="content-display_title">
+                        <!-- L.H.S. -->
+                        <div class="heading-title">
+                            Details
+                        </div>
+                        <!-- R.H.S. -->
+                        <div class="content-display-info">
+                            <div class="controls" id="issue-info-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                    fill="none">
+                                    <path
+                                        d="M9.72786 18.3327C14.3302 18.3327 18.0612 14.6017 18.0612 9.99935C18.0612 5.39698 14.3302 1.66602 9.72786 1.66602C5.12549 1.66602 1.39453 5.39698 1.39453 9.99935C1.39453 14.6017 5.12549 18.3327 9.72786 18.3327Z"
+                                        stroke="#0066FF" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M9.72754 13.3333V10" stroke="#0066FF" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M9.72754 6.66602H9.73587" stroke="#0066FF" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <p>
+                                    Issue Info
+                                </p>
+                        </div>
+                            <!-- Defining Issue Info After Click ViewCard-->
+                            <div class="code-info-container" id="code-info-container">
+                                <!-- Lvl:01 -->
+                                <div class="code-info-title">
+                                    <div class="code-info-text">
+                                        <h5>Issue Number</h5>
+                                        <h6>ISSUE001906</h6>
+                                    </div>
+                                    <div id="code-info-container-close">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <rect width="24" height="24" fill="#0066FF" fill-opacity="0.08" />
+                                        <path d="M18 6L6 18" stroke="#333333" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M6 6L18 18" stroke="#333333" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                    </div>
+
+                                </div>
+
+                                <!-- Lvl:02 -->
+                                <div class="internal-content">
+                                    <!-- Lvl: 2.1 -->
+                                    <div class="internal-content-tab">
+                                        <!-- Lvl:2.1.1 -->
+                                        <div class="internal-content-tab-label">
+                                            Details
+                                        </div>
+                                        <!-- Lvl:2.1.1.1 -->
+                                        <div class="internal-content-tab-info">
+                                            <h5>
+                                                Logged:
+                                            </h5>
+                                            <p>
+                                                Thu, Nov 30, 2023, 13:06:51
+                                            </p>
+                                        </div>
+                                        <!-- Lvl:2.1.1.2 -->
+                                        <div class="internal-content-tab-info">
+                                            <h5>
+                                                Logged:
+                                            </h5>
+                                            <p>
+                                                Thu, Nov 30, 2023, 13:06:51
+                                            </p>
+                                        </div>
+                                        <!-- Lvl:2.1.1.3-->
+                                        <div class="internal-content-tab-info">
+                                            <h5>
+                                                Logged:
+                                            </h5>
+                                            <p>
+                                                Thu, Nov 30, 2023, 13:06:51
+                                            </p>
+                                        </div>
+                                        <!-- Lvl:2.1.1.4 -->
+                                        <div class="internal-content-tab-info">
+                                            <h5>
+                                                Logged:
+                                            </h5>
+                                            <p>
+                                                Thu, Nov 30, 2023, 13:06:51
+                                            </p>
+                                        </div>
+                                        <!-- Lvl:2.1.1.5 -->
+                                        <div class="internal-content-tab-info">
+                                            <h5>
+                                                Logged:
+                                            </h5>
+                                            <p>
+                                                Thu, Nov 30, 2023, 13:06:51
+                                            </p>
+                                        </div>
+                                        <!-- Lvl:2.1.1.6 -->
+                                        <div class="internal-content-tab-info">
+                                            <h5>
+                                                Logged:
+                                            </h5>
+                                            <p>
+                                                Thu, Nov 30, 2023, 13:06:51
+                                            </p>
+                                        </div>
+                                        <!-- Lvl:2.1.1.7 -->
+                                        <div class="internal-content-tab-info">
+                                            <h5>
+                                                Logged:
+                                            </h5>
+                                            <p>
+                                                Thu, Nov 30, 2023, 13:06:51
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Lvl: 2.2 -->
+                                    <div class="internal-content-tab">
+                                        <!-- Lvl:2.1.1 -->
+                                        <div class="internal-content-tab-label">
+                                            PROJECT CODE: PROJ000055
+                                        </div>
+                                        <!-- Lvl:2.1.1.1 -->
+                                        <div class="internal-content-tab-info">
+                                            <h5>
+                                                Project Name:
+                                            </h5>
+                                            <p>
+                                                Performance Improvements – Removal of View XML
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Lvl: 2.3 -->
+                                    <div class="internal-content-tab">
+                                        <!-- Lvl:2.1.1 -->
+                                        <div class="internal-content-tab-label">
+                                            Release - REL017
+                                        </div>
+                                        <!-- Lvl:2.1.1.1 -->
+                                        <div class="internal-content-tab-info">
+                                            <h5>
+                                                Release Summary:
+                                            </h5>
+                                            <p>
+                                                MiConnect 3.0
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Lvl: 2.4 -->
+                                    <div class="internal-content-tab">
+                                        <!-- Lvl:2.1.1 -->
+                                        <div class="internal-content-tab-label">
+                                            ROLES
+                                        </div>
+
+                                        <h6>
+                                            Raised By
+                                        </h6>
+
+                                        <!-- Lvl:2.1.1.1 -->
+                                        <div class="internal-content-tab-info">
+                                            <h5>
+                                                Full Name:
+                                            </h5>
+                                            <p>
+                                                Rob Pallister
+                                            </p>
+                                        </div>
+                                        <!-- Lvl:2.1.1.2 -->
+                                        <div class="internal-content-tab-info">
+                                            <h5>
+                                                Full Name:
+                                            </h5>
+                                            <p>
+                                                Jack Beagle
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- Lvl: 2.5 -->
+                                    <div class="internal-content-tab">
+                                        <!-- Lvl:2.1.1 -->
+                                        <!-- <div class="internal-content-tab-label">
+                                            ROLES
+                                        </div> -->
+
+                                        <h6>
+                                            Raised By
+                                        </h6>
+
+                                        <!-- Lvl:2.1.1.1 -->
+                                        <div class="internal-content-tab-info">
+                                            <h5>
+                                                Full Name:
+                                            </h5>
+                                            <p>
+                                                Rob Pallister
+                                            </p>
+                                        </div>
+                                        <!-- Lvl:2.1.1.2 -->
+                                        <div class="internal-content-tab-info">
+                                            <h5>
+                                                Full Name:
+                                            </h5>
+                                            <p>
+                                                Jack Beagle
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <!-- Lvl:03 -->
+                                <div class="code-info-footer">
+                                    <div class="code-info-text-footer">
+                                        <h5>Raised By</h5>
+                                        <h6>Alex Fitton</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Lvl:02 -->
+                    <div class="accordion-box">
+                        <!-- 1st Accordion -->
+                        <div class="accordion">
+                            <div class="accordion-header">
+                                <div class="accordion-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                        height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-chevron-right">
+                                        <path d="m9 18 6-6-6-6" />
+                                    </svg>
+                                </div>
+                                <div class="accordion-title">
+                                    Basic Info
+                                </div>
+                            </div>
+                            <div class="accordion-content">
+                                <div class="dropdown-container-div">
+                                    <div class=dropdown-container>
+
+                                        <!-- Dropdown:01-->
+                                        <!-- Input Field with Dropdown Action -->
+                                        <div class="input-container-dropdown">
+                                            <label for="dropdown">Process Outcomes</label>
+                                            <div class="input-wrapper">
+                                                <input type="text" class="dropdown-select" placeholder="-" readonly />
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    viewBox="0 0 20 20" fill="none">
+                                                    <path d="M4.45508 7.5L9.45508 12.5L14.4551 7.5" stroke="#5C5C5C"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                        </div>
+
+                                        <!-- Dropdown:02-->
+                                        <!-- Input Field with Dropdown Action -->
+                                        <div class="input-container-dropdown">
+                                            <label for="dropdown">Instant Email Address</label>
+                                            <div class="input-wrapper">
+                                                <input type="text" class="dropdown-select" placeholder="-" readonly />
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    viewBox="0 0 20 20" fill="none">
+                                                    <path d="M4.45508 7.5L9.45508 12.5L14.4551 7.5" stroke="#5C5C5C"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="dropdown-container">
+                                        <!-- Dropdown:01-->
+                                        <!-- Input Field with Dropdown Action -->
+                                        <div class="input-container-dropdown">
+                                            <label for="dropdown">Priority</label>
+                                            <div class="input-wrapper">
+                                                <input type="text" class="dropdown-select" placeholder="-" readonly />
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    viewBox="0 0 20 20" fill="none">
+                                                    <path d="M4.45508 7.5L9.45508 12.5L14.4551 7.5" stroke="#5C5C5C"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                        </div>
+
+                                        <!-- Dropdown:02-->
+                                        <!-- Input Field with Dropdown Action -->
+                                        <div class="input-container-dropdown">
+                                            <label for="dropdown">Issue clarification</label>
+                                            <div class="input-wrapper">
+                                                <input type="text" class="dropdown-select" placeholder="-" readonly />
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    viewBox="0 0 20 20" fill="none">
+                                                    <path d="M4.45508 7.5L9.45508 12.5L14.4551 7.5" stroke="#5C5C5C"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- 2nd Accordion -->
+                        <div class="accordion">
+                            <div class="accordion-header">
+                                <div class="accordion-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                        height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-chevron-right">
+                                        <path d="m9 18 6-6-6-6" />
+                                    </svg></div>
+                                <div class="accordion-title">Resolution Details</div>
+                            </div>
+                            <div class="accordion-content">
+
+                                <div class="dropdown-container-div">
+                                    <div class=dropdown-container>
+
+                                        <!-- Dropdown:01-->
+                                        <!-- Input Field with Dropdown Action -->
+                                        <div class="input-container-dropdown">
+                                            <label for="dropdown">Process Outcomes</label>
+                                            <div class="input-wrapper">
+                                                <input type="text" class="dropdown-select" placeholder="-" readonly />
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    viewBox="0 0 20 20" fill="none">
+                                                    <path d="M4.45508 7.5L9.45508 12.5L14.4551 7.5" stroke="#5C5C5C"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                        </div>
+
+                                        <!-- Dropdown:02-->
+                                        <!-- Input Field with Dropdown Action -->
+                                        <div class="input-container-dropdown">
+                                            <label for="dropdown">Instant Email Address</label>
+                                            <div class="input-wrapper">
+                                                <input type="text" class="dropdown-select" placeholder="-" readonly />
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    viewBox="0 0 20 20" fill="none">
+                                                    <path d="M4.45508 7.5L9.45508 12.5L14.4551 7.5" stroke="#5C5C5C"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="dropdown-container">
+                                        <!-- Dropdown:01-->
+                                        <!-- Input Field with Dropdown Action -->
+                                        <div class="input-container-dropdown">
+                                            <label for="dropdown">Priority</label>
+                                            <div class="input-wrapper">
+                                                <input type="text" class="dropdown-select" placeholder="-" readonly />
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    viewBox="0 0 20 20" fill="none">
+                                                    <path d="M4.45508 7.5L9.45508 12.5L14.4551 7.5" stroke="#5C5C5C"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                        </div>
+
+                                        <!-- Dropdown:02-->
+                                        <!-- Input Field with Dropdown Action -->
+                                        <div class="input-container-dropdown">
+                                            <label for="dropdown">Issue clarification</label>
+                                            <div class="input-wrapper">
+                                                <input type="text" class="dropdown-select" placeholder="-" readonly />
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    viewBox="0 0 20 20" fill="none">
+                                                    <path d="M4.45508 7.5L9.45508 12.5L14.4551 7.5" stroke="#5C5C5C"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- 3rd Accordion -->
+                        <div class="accordion">
+                            <div class="accordion-header">
+                                <div class="accordion-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                        height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-chevron-right">
+                                        <path d="m9 18 6-6-6-6" />
+                                    </svg></div>
+                                <div class="accordion-title">Reset Details</div>
+                            </div>
+                            <div class="accordion-content">
+
+                                <div class="dropdown-container-div">
+                                    <div class=dropdown-container>
+
+                                        <!-- Dropdown:01-->
+                                        <!-- Input Field with Dropdown Action -->
+                                        <div class="input-container-dropdown">
+                                            <label for="dropdown">Process Outcomes</label>
+                                            <div class="input-wrapper">
+                                                <input type="text" class="dropdown-select" placeholder="-" readonly />
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    viewBox="0 0 20 20" fill="none">
+                                                    <path d="M4.45508 7.5L9.45508 12.5L14.4551 7.5" stroke="#5C5C5C"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                        </div>
+
+                                        <!-- Dropdown:02-->
+                                        <!-- Input Field with Dropdown Action -->
+                                        <div class="input-container-dropdown">
+                                            <label for="dropdown">Instant Email Address</label>
+                                            <div class="input-wrapper">
+                                                <input type="text" class="dropdown-select" placeholder="-" readonly />
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    viewBox="0 0 20 20" fill="none">
+                                                    <path d="M4.45508 7.5L9.45508 12.5L14.4551 7.5" stroke="#5C5C5C"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="dropdown-container">
+                                        <!-- Dropdown:01-->
+                                        <!-- Input Field with Dropdown Action -->
+                                        <div class="input-container-dropdown">
+                                            <label for="dropdown">Priority</label>
+                                            <div class="input-wrapper">
+                                                <input type="text" class="dropdown-select" placeholder="-" readonly />
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    viewBox="0 0 20 20" fill="none">
+                                                    <path d="M4.45508 7.5L9.45508 12.5L14.4551 7.5" stroke="#5C5C5C"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                        </div>
+
+                                        <!-- Dropdown:02-->
+                                        <!-- Input Field with Dropdown Action -->
+                                        <div class="input-container-dropdown">
+                                            <label for="dropdown">Issue clarification</label>
+                                            <div class="input-wrapper">
+                                                <input type="text" class="dropdown-select" placeholder="-" readonly />
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    viewBox="0 0 20 20" fill="none">
+                                                    <path d="M4.45508 7.5L9.45508 12.5L14.4551 7.5" stroke="#5C5C5C"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- 4th Accordion -->
+                        <div class="accordion">
+                            <div class="accordion-header">
+                                <div class="accordion-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                        height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-chevron-right">
+                                        <path d="m9 18 6-6-6-6" />
+                                    </svg></div>
+                                <div class="accordion-title">Customer Details</div>
+                            </div>
+                            <div class="accordion-content">
+
+                                <div class="dropdown-container-div">
+                                    <div class=dropdown-container>
+
+                                        <!-- Dropdown:01-->
+                                        <!-- Input Field with Dropdown Action -->
+                                        <div class="input-container-dropdown">
+                                            <label for="dropdown">Process Outcomes</label>
+                                            <div class="input-wrapper">
+                                                <input type="text" class="dropdown-select" placeholder="-" readonly />
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    viewBox="0 0 20 20" fill="none">
+                                                    <path d="M4.45508 7.5L9.45508 12.5L14.4551 7.5" stroke="#5C5C5C"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                        </div>
+
+                                        <!-- Dropdown:02-->
+                                        <!-- Input Field with Dropdown Action -->
+                                        <div class="input-container-dropdown">
+                                            <label for="dropdown">Instant Email Address</label>
+                                            <div class="input-wrapper">
+                                                <input type="text" class="dropdown-select" placeholder="-" readonly />
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    viewBox="0 0 20 20" fill="none">
+                                                    <path d="M4.45508 7.5L9.45508 12.5L14.4551 7.5" stroke="#5C5C5C"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="dropdown-container">
+                                        <!-- Dropdown:01-->
+                                        <!-- Input Field with Dropdown Action -->
+                                        <div class="input-container-dropdown">
+                                            <label for="dropdown">Priority</label>
+                                            <div class="input-wrapper">
+                                                <input type="text" class="dropdown-select" placeholder="-" readonly />
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    viewBox="0 0 20 20" fill="none">
+                                                    <path d="M4.45508 7.5L9.45508 12.5L14.4551 7.5" stroke="#5C5C5C"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                        </div>
+
+                                        <!-- Dropdown:02-->
+                                        <!-- Input Field with Dropdown Action -->
+                                        <div class="input-container-dropdown">
+                                            <label for="dropdown">Issue clarification</label>
+                                            <div class="input-wrapper">
+                                                <input type="text" class="dropdown-select" placeholder="-" readonly />
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    viewBox="0 0 20 20" fill="none">
+                                                    <path d="M4.45508 7.5L9.45508 12.5L14.4551 7.5" stroke="#5C5C5C"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- 5th Accordion -->
+                        <div class="accordion">
+                            <div class="accordion-header">
+                                <div class="accordion-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                        height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-chevron-right">
+                                        <path d="m9 18 6-6-6-6" />
+                                    </svg></div>
+                                <div class="accordion-title">QA Info</div>
+                            </div>
+                            <div class="accordion-content">
+
+                                <div class="dropdown-container-div">
+                                    <div class=dropdown-container>
+
+                                        <!-- Dropdown:01-->
+                                        <!-- Input Field with Dropdown Action -->
+                                        <div class="input-container-dropdown">
+                                            <label for="dropdown">Process Outcomes</label>
+                                            <div class="input-wrapper">
+                                                <input type="text" class="dropdown-select" placeholder="-" readonly />
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    viewBox="0 0 20 20" fill="none">
+                                                    <path d="M4.45508 7.5L9.45508 12.5L14.4551 7.5" stroke="#5C5C5C"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                        </div>
+
+                                        <!-- Dropdown:02-->
+                                        <!-- Input Field with Dropdown Action -->
+                                        <div class="input-container-dropdown">
+                                            <label for="dropdown">Instant Email Address</label>
+                                            <div class="input-wrapper">
+                                                <input type="text" class="dropdown-select" placeholder="-" readonly />
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    viewBox="0 0 20 20" fill="none">
+                                                    <path d="M4.45508 7.5L9.45508 12.5L14.4551 7.5" stroke="#5C5C5C"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="dropdown-container">
+                                        <!-- Dropdown:01-->
+                                        <!-- Input Field with Dropdown Action -->
+                                        <div class="input-container-dropdown">
+                                            <label for="dropdown">Priority</label>
+                                            <div class="input-wrapper">
+                                                <input type="text" class="dropdown-select" placeholder="-" readonly />
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    viewBox="0 0 20 20" fill="none">
+                                                    <path d="M4.45508 7.5L9.45508 12.5L14.4551 7.5" stroke="#5C5C5C"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                        </div>
+
+                                        <!-- Dropdown:02-->
+                                        <!-- Input Field with Dropdown Action -->
+                                        <div class="input-container-dropdown">
+                                            <label for="dropdown">Issue clarification</label>
+                                            <div class="input-wrapper">
+                                                <input type="text" class="dropdown-select" placeholder="-" readonly />
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    viewBox="0 0 20 20" fill="none">
+                                                    <path d="M4.45508 7.5L9.45508 12.5L14.4551 7.5" stroke="#5C5C5C"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- More Accordion
+                        <div class="accordion">
+                            <div class="accordion-header">
+                                <div class="accordion-icon">+</div>
+                                <div class="accordion-title">Accordion Title</div>
+                            </div>
+                            <div class="accordion-content">
+                                <p>This is the content that gets revealed when the accordion is expanded.</p>
+                            </div>
+                        </div> -->
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- Test -->
+    <!-- Button to Open the Div -->
+    <!-- <button id="openDivBtn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path
+                d="M9.72786 18.3327C14.3302 18.3327 18.0612 14.6017 18.0612 9.99935C18.0612 5.39698 14.3302 1.66602 9.72786 1.66602C5.12549 1.66602 1.39453 5.39698 1.39453 9.99935C1.39453 14.6017 5.12549 18.3327 9.72786 18.3327Z"
+                stroke="#0066FF" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M9.72754 13.3333V10" stroke="#0066FF" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            <path d="M9.72754 6.66602H9.73587" stroke="#0066FF" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+        </svg>
+        <p>Issue Info</p>
+    </button> -->
+
+    <!-- New Div (Initially Hidden) -->
+    <!-- <div id="newDiv" class="new-div">
+        <div class="code-info-container2">
+            <div class="code-info-title">
+                <div class="code-info-text">
+                    <h5>Issue Number</h5>
+                    <h6>ISSUE001906</h6>
+                </div>
+                <svg id="closeDivBtn" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    fill="none">
+                    <rect width="24" height="24" fill="#0066FF" fill-opacity="0.08" />
+                    <path d="M18 6L6 18" stroke="#333333" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M6 6L18 18" stroke="#333333" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </div>
+            <div>div2</div>
+            <div>div3</div>
+        </div>
+    </div> -->
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,503 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: poppins, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Top Navigation */
+.nav-blue-header {
+    display: flex;
+    width: 100%;
+    /* Use 100% width to make it responsive */
+    padding: 8px 24px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0066ff;
+}
+
+/* R.H.S. Content */
+.logo-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-main:hover {
+    cursor: pointer;
+}
+
+.vertical-line {
+    width: 1px;
+    /* Line width */
+    height: 28px;
+    /* Line height */
+    background-color: white;
+    /* Line color */
+    margin: 0 16px;
+    /* Spacing around the line */
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: 400;
+    color: white;
+}
+
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .nav-blue {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo-main {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .vertical-line {
+        display: block;
+        /* Display the vertical line on small screens */
+    }
+
+    .left-user-setting {
+        display: none;
+    }
+}
+
+
+/* Middle Content: Workspace Setting  */
+.middle-content-setting {
+    display: flex;
+    width: 100%;
+    padding: 32px 24px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+/* Define Back Action */
+/* Lvl:01 */
+.back-action {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    /* background-color: aquamarine; */
+    width: 100%;
+}
+
+
+.back-action svg {
+    width: 20px;
+    height: 20px;
+    fill: rgba(0, 102, 255, 0.04);
+
+}
+
+.back-action h5 {
+    color: var(--Secondary, #5C5C5C);
+    /* font-family: "IBM Plex Sans"; */
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+.back-action svg:hover,
+.back-action h5:hover {
+    cursor: pointer;
+    color: #0066ff;
+}
+
+
+
+
+
+/* lvl:02 */
+.workspace-setting-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    align-self: stretch;
+}
+
+/* Lvl:2.1 */
+.workspace-setting-title {
+    display: flex;
+}
+
+.workspace-setting-title h5 {
+    color: var(--Primary, #333);
+    /* font-family: "IBM Plex Sans"; */
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* Lvl:2.2 */
+/* Main Container */
+.workspace-setting-side-and-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 60px;
+    align-self: stretch;
+}
+
+
+/* L.H.S. */
+/* Side Menu */
+.side-menu {
+    display: flex;
+    width: 210px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+
+/* Multiple Tab-List to access */
+.side-menu__tab-list {
+    list-style: none;
+    /* Remove bullet points */
+    margin: 0;
+    /* Remove default margin */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.side-menu__tab-list li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    border-left: 3px solid transparent;
+    border-radius: 1px;
+}
+
+.side-menu__tab-list a {
+    text-decoration: none;
+    /* Remove underline */
+    color: #5c5c5c;
+    display: flex;
+    padding: 10px 16px;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+}
+
+/* Ok */
+.side-menu__tab-list a svg {
+    width: 20px;
+    height: 20px;
+    stroke-width: 1px;
+}
+
+/* Ok */
+.side-menu__tab-list a span {
+    overflow: hidden;
+    color: var(--Secondary, #5C5C5C);
+    /* font-family: "IBM Plex Sans"; */
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+
+.side-menu__tab-list li:hover,
+.side-menu__tab-list--active {
+    background: #EBEBEB;
+    cursor: pointer;
+    color: #0066ff;
+    /* border-color: #0066ff !important; */
+    border-left: 3px solid #0066ff !important;
+}
+
+/* .side-menu__tab-list--active {
+    background: #EBEBEB;
+    cursor: pointer;
+    border-color: #0066ff !important;
+} */
+
+.side-menu__tab-list li:hover a,
+.side-menu__tab-list--active a {
+    color: #0066ff;
+    /* Active and hover text color */
+}
+
+
+
+
+.services-content-accordion {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 32px;
+    /* background-color: rgb(225, 243, 249); */
+}
+
+
+
+/* About Content Info */
+.tools-list-services {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+}
+
+.tools-list-services h1 {
+    color: var(--Primary, #333);
+    leading-trim: both;
+    text-edge: cap;
+    /* font-family: "IBM Plex Sans"; */
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.tools-list-services-btn {
+    display: flex;
+    align-items: center;
+    gap: 1px;
+}
+
+
+.btn-action-services {
+    display: flex;
+    height: 31px;
+    padding: 0px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: var(--White, #FFF);
+    text-align: center;
+    /* font-family: "IBM Plex Sans"; */
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background: #06F;
+    border: none;
+}
+
+.btn-action-services:hover{
+    cursor: pointer;
+    background-color: #035fea;
+}
+
+
+
+.accordion-parent{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid #E8EBEC; */
+    border-top: 1px solid #e8ebec;
+    border-left: 1px solid #e8ebec;
+    border-right: 1px solid #e8ebec;
+    width: 100%;
+}
+
+/* Accordion Properties */
+.accordion-box {
+    display: flex;
+    width: 100%;
+}
+
+.accordion {
+    border-bottom: 1px solid #E8EBEC;
+    /* padding: 10px 0; */
+    width: 100%;
+    
+}
+
+.accordion-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+    padding: 8px 16px 8px 12px;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.3s ease;
+    gap: 8px;
+    width: 100%;
+}
+
+.accordion-icon {
+    font-size: 20px;
+    /* margin-right: 10px; */
+    transition: transform 0.3s ease;
+}
+
+.accordion-title h5 {
+    width: 348px;
+    color: var(--Primary, #333);
+    /* font-family: "IBM Plex Sans"; */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: auto;
+    /* transition: max-height 0.3s ease, padding 0.3s ease; */
+    padding: 0 0;
+}
+
+
+
+
+/* Active Accordion */
+
+.accordion.active .accordion-icon svg {
+    transform: rotate(90deg);
+    /* Rotate the SVG to indicate it's active */
+    stroke: #0066FF;
+    /* Change the color of the SVG stroke */
+    transition: transform 0.3s ease, stroke 0.3s ease;
+    /* Smooth transition */
+}
+
+.accordion.active .accordion-title {
+    color: #333;
+    /* Change the title color when active */
+    font-weight: normal;
+    /* Optionally, make the title bold */
+}
+
+
+.accordion.active {
+    border-bottom: 1px solid #06f;
+    /* Darker border for active accordion */
+}
+
+.accordion.active .accordion-header {
+    background-color: #E8E6DF;
+}
+
+.accordion.active .accordion-content {
+    /* max-height: 648px; */
+    /* Adjust based on content height */
+    /* padding: 10px 0; */
+    border-top: 1px solid #06f;
+    /* border-bottom: 1px solid #333; */
+}
+
+
+
+
+
+
+
+
+
+.content-underneath {
+    display: flex;
+    align-items: center;
+    align-self: stretch;
+}
+
+.content-underneath-column01 {
+    display: flex;
+    padding: 8px 44px;
+    align-items: center;
+    gap: 8px;
+    flex: 1 0 0;
+    border-top: 1px solid #E8EBEC;
+    /* border-left: 1px solid #E8EBEC; */
+
+    color: var(--Primary, #333);
+    /* font-family: "IBM Plex Sans"; */
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    width: 348px;
+}
+
+.content-underneath-column02 {
+    display: flex;
+    padding: 8px;
+    align-items: center;
+    gap: 8px;
+    flex: 1 0 0;
+    border-top: 1px solid #E8EBEC;
+    /* border-right: 1px solid #E8EBEC; */
+    border-left: 1px solid #E8EBEC;
+
+    width: 348px;
+    color: var(--Primary, #333);
+    font-family: "IBM Plex Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+
+
+/* Bottom */
+/* Footer */
+.footer-desktop {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+    color: #737373;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    text-align: center;
+}
+
+.footer-desktop h1 {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* Div for Clickable */
+.user-click {
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+}
+
+/* Define text */
+.user-click h1 {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.user-click h1:hover {
+    color: #0066ff;
+    cursor: pointer;
+}
